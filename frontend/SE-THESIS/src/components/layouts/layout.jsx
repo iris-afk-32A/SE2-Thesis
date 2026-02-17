@@ -11,7 +11,7 @@ export default function Layout() {
 
       <section className='grid grid-cols-[5%_1fr] gap-4 p-4'>
         <Navbar />
-        <div className='w-full h-full px-6'>
+        <div className='w-full h-full p-6'>
           <Outlet/>
         </div>
       </section>

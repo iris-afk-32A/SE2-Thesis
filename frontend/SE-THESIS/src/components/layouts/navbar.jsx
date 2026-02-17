@@ -19,7 +19,7 @@ export default function Navbar() {
         <div>
           <img src={Logo} alt="Logo" className="w-full" />
         </div>
-        <SlideRight selector='.stagger' stagger={0.2} duration={0.5}>
+        <SlideRight selector=".stagger" stagger={0.2} duration={0.5}>
           <div className="relative flex flex-col gap-5">
             <button
               onClick={() => navigate("/iris/home")}
@@ -29,29 +29,38 @@ export default function Navbar() {
             </button>
 
             <button
-              onClick={() => navigate("/iris/activity")}
+              onClick={() => navigate("/iris/analytics")}
               className="w-full aspect-square stagger bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip"
             >
               <img src={Dashboard} alt="Dashboard" />
             </button>
 
             <button
-              onClick={() => console.log("CLICK")}
+              onClick={() => navigate("/iris/activity")}
               className="w-full aspect-square stagger bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip"
             >
               <img src={Activity} alt="Activity" />
             </button>
 
-            <button className="w-full aspect-square stagger bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip">
+            <button
+              onClick={() => navigate("/iris/notifications")}
+              className="w-full aspect-square stagger bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip"
+            >
               <img src={Notif} alt="Notifications" />
             </button>
 
-            <button onClick={() => navigate('/iris/development')} className="w-full aspect-square stagger bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip">
+            <button
+              onClick={() => navigate("/iris/development")}
+              className="w-full aspect-square stagger bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip"
+            >
               <img src={Dev} alt="Notifications" />
             </button>
           </div>
         </SlideRight>
-        <button onClick={() => navigate('/iris')} className="w-full aspect-square bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip">
+        <button
+          onClick={() => navigate("/iris")}
+          className="w-full aspect-square bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip"
+        >
           <img src={Ex} alt="Notifications" />
         </button>
       </div>

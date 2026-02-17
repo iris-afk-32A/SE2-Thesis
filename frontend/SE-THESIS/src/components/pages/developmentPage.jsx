@@ -72,7 +72,7 @@ export default function DevelopmentPage() {
   }, []);
 
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div className="w-full h-full flex flex-col justify-center items-center gap-6">
       <video
         ref={videoRef}
         autoPlay
@@ -81,6 +81,7 @@ export default function DevelopmentPage() {
       ></video>
 
       <canvas ref={canvasRef} className="hidden"></canvas>
+      <h2 className="primary-text">THIS IS A DEVELOPMENT PAGE USED FOR TESTING PURPOSES ONLY hehe</h2>
     </div>
   );
 }

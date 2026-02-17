@@ -6,6 +6,8 @@ import SignUpPage from "../auth/signUpPage.jsx";
 import LoginPage from "../auth/loginPage.jsx";
 import DashboardPage from "../pages/dashboardPage.jsx";
 import ActivityPage from "../pages/activityPage.jsx";
+import AnalyticsPage from "../pages/analyticsPage.jsx";
+import NotificationPage from "../pages/notificationPage.jsx";
 import Layout from "../components/layouts/layout.jsx";
 import DevelopmentPage from "../components/pages/developmentPage.jsx";
 
@@ -68,6 +70,8 @@ export default function AppRoutes() {
           <Route path="/iris/home" element={<DashboardPage />} />
           <Route path="/iris/activity" element={<ActivityPage />} />
           <Route path="/iris/development" element={<DevelopmentPage />} />
+          <Route path="/iris/analytics" element={<AnalyticsPage />} />
+          <Route path="/iris/notifications" element={<NotificationPage />} />
         </Route>
       </Routes>
   );
