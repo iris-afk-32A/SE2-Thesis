@@ -1,7 +1,7 @@
 import React from 'react'
 import UnderConstruction from '../../public/images/under_construction.png'
 
-export default function ActivityPage() {
+export default function NotificationPage() {
   return (
     <div className='w-full h-full items-center justify-center flex flex-col gap-6'>
       <img src={UnderConstruction} alt="Under Construction" />
