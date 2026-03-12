@@ -3,11 +3,11 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = process.env.SERVER_PORT;
-const connectDB = require('./config/modelDB');
+const connectDB = require('./config/db');
 const cors = require('cors');
 
 
-connectDB();
+connectDB().catch(console.dir);
 
 const HomeRouter = require('./Routes/home');
 
