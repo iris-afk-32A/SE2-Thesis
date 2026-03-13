@@ -13,45 +13,11 @@ The tech stack that will be used is **MERN** for faster, more scalable, and reli
 
 ---
 
-## Database Design
+## DOCUMENTATIONS
 
-### Camera Table
-Used for storing multiple camera objects for each room.
+Research Paper: https://tinyurl.com/IRIS-ResearchPaper
 
-| Column       | Type    | Description           |
-|--------------|---------|----------------------|
-| Device_ID    | Primary | Unique camera ID     |
-| Location     | String  | Camera location      |
-| IP_address   | Number  | Camera IP address    |
-| Device_desc  | String  | Camera description   |
-
----
-
-### Detection Result Table
-Stores logs of each detection.
-
-| Column       | Type    | Description                  |
-|--------------|---------|------------------------------|
-| Result_ID    | Primary | Unique result ID             |
-| Device_ID    | Foreign | Camera ID from Camera Table  |
-| Timestamp    | DateTime| Time and date of detection   |
-| Frame_Number | Number  | Frame number from video feed |
-| Count        | Number  | Number of people detected    |
-| Boxes        | JSON    | Bounding box coordinates     |
-| Saved_Image  | Image   | Captured image of detection  |
-
----
-
-### Analytics Table
-Stores analytics based on detection results.
-
-| Column                 | Type    | Description                  |
-|------------------------|---------|------------------------------|
-| Analytics_ID           | Primary | Unique analytics ID          |
-| Result_ID              | Foreign | Detection Result ID          |
-| AVG_Count_Last_Minute  | Number  | Average count in last minute |
-| MAX_Count_Last_Minute  | Number  | Maximum count in last minute |
-| MIN_Count_Last_Minute  | Number  | Minimum count in last minute |
+Test Case: https://tinyurl.com/IRIS-TestCase
 
 ---
 
