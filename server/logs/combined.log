@@ -1,0 +1,179 @@
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:13:39"}
+{"ip":"::1","level":"error","message":"AUTH REGISTER -- Attempted to register an existing email: With status code 400 with the email of trizxd123@gmail.com","method":"POST","timestamp":"2026-03-14 12:13:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:15:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:15:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:21"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:23"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:30"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:39"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:16:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:03"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:23"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:25"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:17:52"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:13"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:25"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:33"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:18:51"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:18:56"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code 200","method":"POST","timestamp":"2026-03-14 12:19:00"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:19:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:19:37"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:19:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:19:47"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:19:54"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-14 12:20:42"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:21:24"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:21:31"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-14 12:21:41"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:21:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:22:36"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:22:39"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:22:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:08"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:14"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:22"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:26"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:23:39"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-14 12:23:47"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:23:48"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:24:09"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:24:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:38:39"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:38:50"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:38:55"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:39:01"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:39:18"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:39:19"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:39:22"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:39:38"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-14 12:40:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:44:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:44:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:44:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:44:58"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:45:07"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:45:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:45:22"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:45:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:45:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:45:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:45:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:46:22"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:46:58"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:47:13"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:47:21"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:47:25"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:47:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:47:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:13"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:23"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:28"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:32"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:39"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:48:59"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:49:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:49:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:49:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:33"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:38"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:53"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:50:59"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:51:04"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:51:23"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:51:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:51:39"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:51:41"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:51:52"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:52:41"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:52:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:52:53"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:52:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:08"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:14"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:26"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:53:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:06"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:08"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:14"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:20"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:24"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:42"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:54:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:55:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:57:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:57:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:57:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:03"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:15"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:21"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:30"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:58:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:03"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:26"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:33"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:39"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 12:59:41"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:01:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:01:24"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:01:27"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:01:38"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:01:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:01:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:01:54"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:06"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:08"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-14 13:02:52"}

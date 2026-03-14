@@ -20,6 +20,10 @@ export default function AppRoutes() {
   const hasChecked = useRef(false);
   const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
+  // TODO: Add comments for debugging
+  // TODO: Fix check health to only send once
+  // TODO: Maybe move the check health to service component ¯\_(ツ)_/¯
+
   useEffect(() => {
     let interval;
 

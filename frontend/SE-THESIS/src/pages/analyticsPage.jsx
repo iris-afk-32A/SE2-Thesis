@@ -1,5 +1,5 @@
 import React from 'react'
-import UnderConstruction from '../../public/images/under_construction.png'
+import UnderConstruction from '@/assets/images/under_construction.png'
 
 export default function AnalyticsPage() {
   return (

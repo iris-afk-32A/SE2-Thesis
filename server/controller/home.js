@@ -3,10 +3,10 @@ const path = require("path");
 
 const imagePath = path.join(__dirname, "../images/sample2.jpg");
 
-const home = (req, res) => {
-  res.status(201).json({ message: "Welcome to the Home Page!" });
-};
+// TODO: This need a complete overhaul like wtf is this. Spaghetti ah shi (シ_ _)シ
 
+// !This needs a dedicated controller (I know this is in development, but shit it giving me headaches)
+// TODO: Well refactor then move it to its dedicated controller, then add comments on this shit too
 const getPeopleCount = async (req, res) => {
   try {
     if (!req.file) {
@@ -36,6 +36,7 @@ const getPeopleCount = async (req, res) => {
   }
 };
 
+// ! Well theres nothing much to change in this
 const getHealth = async (req, res) => {
   try {
     const response = await axios.get("http://localhost:8000/health");
@@ -47,6 +48,5 @@ const getHealth = async (req, res) => {
 
 module.exports = {
   getPeopleCount,
-  home,
   getHealth,
 };

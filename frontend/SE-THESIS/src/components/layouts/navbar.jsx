@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from "../../../public/icons/logo_w.png";
-import Home from "../../../public/icons/home.png";
-import Dashboard from "../../../public/icons/dashboard.png";
-import Activity from "../../../public/icons/activity.png";
-import Notif from "../../../public/icons/notif.png";
-import Dev from "../../../public/icons/dev.png";
-import Ex from "../../../public/icons/ex.png";
+import Logo from "@/assets/icons/logo_w.png";
+import Home from "@/assets/icons/home.png";
+import Dashboard from "@/assets/icons/dashboard.png";
+import Activity from "@/assets/icons/activity.png";
+import Notif from "@/assets/icons/notif.png";
+import Dev from "@/assets/icons/dev.png";
+import Ex from "@/assets/icons/ex.png";
 
 import { useNavigate } from "react-router-dom";
 

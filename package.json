@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "frontend": "cd frontend\\SE-THESIS && npm run dev",
+    "server": "cd server && npm run dev",
+    "backend": "cd backend && venv\\Scripts\\activate && uvicorn app:app --host 0.0.0.0 --port 8000",
+    "dev": "concurrently \"npm run frontend\" \"npm run server\" \"npm run backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

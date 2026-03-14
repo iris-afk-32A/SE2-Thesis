@@ -1,6 +1,6 @@
 import React from "react";
-import User from "../../../public/icons/user.png";
-import Search from "../../../public/icons/search.png";
+import User from "@/assets/icons/user.png";
+import Search from "@/assets/icons/search.png";
 
 export default function SearchBar() {
   return (

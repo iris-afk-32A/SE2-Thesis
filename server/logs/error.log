@@ -1,0 +1,8 @@
+{"ip":"::1","level":"error","message":"AUTH REGISTER -- Attempted to register an existing email: With status code 400 with the email of trizxd123@gmail.com","method":"POST","timestamp":"2026-03-14 12:13:44"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code 200","method":"POST","timestamp":"2026-03-14 12:19:00"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-14 12:20:42"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:21:24"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:21:31"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-14 12:21:41"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:21:45"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-14 12:22:39"}

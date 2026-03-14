@@ -29,7 +29,7 @@ const userSchema = new mongoose.Schema({
   },
   user_organization: {
     type: String,
-    default: null
+    default: ""
   },
   time_created: {
     type: Date,

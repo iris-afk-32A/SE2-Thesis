@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Logo from "../../public/images/slanted_logo.png";
-import Logo2 from "../../public/images/slanted_logo2.png";
+import Logo from "@/assets/images/slanted_logo.png";
+import Logo2 from "@/assets/images/slanted_logo2.png";
 import { getHomeMessage, getPeopleCount } from "../api/home.api.js";
 import GrayButton from "../components/common/grayButton.jsx";
 import { useNavigate } from "react-router-dom";
@@ -8,9 +8,9 @@ import { useNavigate } from "react-router-dom";
 import SlideRight from "../components/animations/slideRight.jsx";
 import SlideLeft from "../components/animations/slideLeft.jsx";
 
-import Bulb from "../../public/icons/bulb.png";
-import Target from "../../public/icons/target.png";
-import Copy from "../../public/icons/copy.png";
+import Bulb from "@/assets/icons/bulb.png";
+import Target from "@/assets/icons/target.png";
+import Copy from "@/assets/icons/copy.png";
 
 export default function HomePage() {
   const [message, setMessage] = useState("Offline");

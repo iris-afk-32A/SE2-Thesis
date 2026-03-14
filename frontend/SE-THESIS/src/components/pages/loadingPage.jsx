@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../../../public/images/slanted_logo.png";
-import Logo2 from "../../../public/images/slanted_logo2.png";
+import Logo from "@/assets/images/slanted_logo.png";
+import Logo2 from "@/assets/images/slanted_logo2.png";
 
 export default function LoadingPage() {
   return (
