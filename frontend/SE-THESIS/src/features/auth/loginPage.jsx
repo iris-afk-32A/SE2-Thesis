@@ -66,6 +66,7 @@ export default function LoginPage() {
 
       toast.success(res.message);
       localStorage.setItem("token", res.token);
+      console.log("TOKEN:", res.token)
       navigate("/iris/home");
     } catch (error) {
       // ?Sends the error to server handler to check if its a server_down error

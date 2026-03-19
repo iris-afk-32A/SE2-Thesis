@@ -7,13 +7,12 @@ import { useServerStatus } from "../../context/serverStatusContext.jsx";
 import { toast } from "sonner";
 import { addRoom, getRooms } from "../../shared/services/roomService.js";
 import { useNavigate } from "react-router-dom";
-import { socket } from "../../shared/services/socketService.js";
+import { useRooms } from "../../context/roomContext.jsx";
 
 export default function classroomPage() {
   const navigate = useNavigate();
-  const [rooms, setRooms] = useState([]);
+  const { rooms } = useRooms();
   console.log(rooms);
-  socket.on("connect", () => console.log("Socket connected!", socket.id));
 
   const {
     register,
@@ -55,26 +54,6 @@ export default function classroomPage() {
 
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
-  
-  // TODO: Make this an independent shared component
-  useEffect(() => {
-    const fetchRooms = async () => {
-      try {
-        const roomsData = await getRooms();
-        setRooms(roomsData);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    fetchRooms();
-
-    // Listen for new rooms in real-time
-    const handleNewRoom = (room) => setRooms((prev) => [...prev, room]);
-    socket.on("roomAdded", handleNewRoom);
-
-    return () => socket.off("roomAdded", handleNewRoom);
-  }, []);
 
   return (
     <div className="w-full h-full flex flex-col gap-2 bg-[#E4E3E1] min-h-0">

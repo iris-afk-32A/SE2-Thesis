@@ -8,15 +8,16 @@ const logger = require("../utils/logger");
 
 exports.addRoom = async (req, res, next) => {
   try {
+    const io = getIO();
     const { room_name } = req.body;
 
-    const user = await User.findById(req.userID).select("first_name");
+    const userExists = await User.exists({ _id: req.userID });
 
-    if (!user) {
+    if (!userExists) {
       return res.status(404).json({ message: "User not found" });
     }
 
-    const existingRoom = await Room.findOne({ room_name });
+    const existingRoom = await Room.findOne({ room_name, room_owner: req.userID })
     if (existingRoom) {
       logger.error({
         message: `ROOM CREATE -- Attempted to create a room with an existing name`,
@@ -30,7 +31,7 @@ exports.addRoom = async (req, res, next) => {
 
     const room = new Room({
       room_name,
-      room_owner: user._id,
+      room_owner: req.userID,
     });
 
     await room.save();
@@ -40,11 +41,12 @@ exports.addRoom = async (req, res, next) => {
       ip: req.ip,
     });
 
-    const io = getIO();
-    io.emit("roomAdded", room);
+    const populatedRoom = await room.populate("room_owner", "first_name email");
+    io.emit("roomAdded", populatedRoom);
 
     res.status(201).json({
       message: "Room added successfully",
+      room: populatedRoom,
     });
   } catch (error) {
     logger.error({
@@ -58,8 +60,11 @@ exports.addRoom = async (req, res, next) => {
 
 exports.getRooms = async (req, res, next) => {
   try {
-    const rooms = await Room.find().populate("room_owner", "first_name"); 
-    // populate room_owner's first_name for display
+    const rooms = await Room.find({
+      room_owner: req.userID,
+    }).populate("room_owner", "first_name");
+    console.log("ROOMS:", room)
+
     res.status(200).json(rooms);
   } catch (error) {
     logger.error({

@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  // Wala dito yung user_id kasi sa may _id object na agad sa MongoDB
   first_name: {
     type: String,
     required: true,

@@ -4,38 +4,19 @@ import { useState, useEffect } from "react";
 import { checkFirstTime } from "../../shared/services/authService";
 import { socket } from "../../shared/services/socketService.js";
 import { getRooms } from "../../shared/services/roomService.js";
+import { useRooms } from "../../context/roomContext.jsx";
 
 export default function dashboard() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [showGuide, setShowGuide] = useState(false);
-  const [rooms, setRooms] = useState([]);
+  const { rooms } = useRooms();
   const emptyRooms = rooms.filter((room) => room.room_occupants > 0).length;
   socket.on("connect", () => console.log("Socket connected!", socket.id));
 
   useEffect(() => {
-    const fetchFirstTime = async () => {
-      const user = await checkFirstTime();
-      if (user?.is_firsttime) {
-        setShowGuide(true);
-      }
-      console.log("USER STATUS:", user);
-    };
-
-    fetchFirstTime();
-
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
-    const fetchRooms = async () => {
-      try {
-        const roomsData = await getRooms();
-        setRooms(roomsData);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    fetchRooms();
 
     // Listen for new rooms in real-time
     const handleNewRoom = (room) => setRooms((prev) => [...prev, room]);
