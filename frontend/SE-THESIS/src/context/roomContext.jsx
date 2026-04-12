@@ -6,7 +6,6 @@ const RoomContext = createContext();
 
 export const RoomProvider = ({ children }) => {
   const [rooms, setRooms] = useState([]);
-  const token = localStorage.getItem("token");
 
   console.log("ROOMS FROM CONTEXT:", rooms)
 
@@ -25,6 +24,8 @@ export const RoomProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    const token = localStorage.getItem("token");
+    if(!token) return;
     fetchRooms();
     
     const handleNewRoom = (room) => {

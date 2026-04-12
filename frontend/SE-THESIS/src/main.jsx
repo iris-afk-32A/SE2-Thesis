@@ -7,6 +7,9 @@ import { ServerStatusProvider } from "./context/serverStatusContext";
 import { RoomProvider } from "./context/roomContext";
 import { AuthProvider } from "./context/authContext";
 import { CameraProvider } from "./context/cameraContext";
+import { SubjectProvider } from "./context/subjectContext";
+import { ScheduleProvider } from "./context/scheduleContext";
+
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -14,10 +17,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ServerStatusProvider>
       <AuthProvider>
         <RoomProvider>
-          <CameraProvider>
-            <App />
-            <Toaster richColors position="bottom-right" />
-          </CameraProvider>
+          <SubjectProvider>
+            <ScheduleProvider>
+              <CameraProvider>
+                <App />
+                <Toaster richColors position="bottom-right" />
+              </CameraProvider>
+            </ScheduleProvider>
+          </SubjectProvider>
         </RoomProvider>
       </AuthProvider>
     </ServerStatusProvider>

@@ -214,7 +214,7 @@ export default function NotificationPage() {
                           : item.message}
                       </span>
                     </div>
-                    <span className="text-base text-[#666] absolute right-175 text-right">
+                    <span className="text-base text-[#666] w-20 absolute right-169 text-left">
                       {formatDate(item.dateField)}
                     </span>
                     <div className="flex items-center gap-2 w-24 justify-end">

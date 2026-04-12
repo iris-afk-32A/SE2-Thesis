@@ -133,3 +133,54 @@ exports.deleteRoom = async (req, res, next) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+exports.getRoomSpecifications = async (req, res) => {
+  try {
+    const { roomId } = req.params;
+
+    const room = await Room.findById(roomId);
+    if (!room) return res.status(404).json({ message: "Room not found" });
+
+    const rooms = await Room.find({
+      room_organization: room.room_organization,
+      room_specification: { $ne: null }
+    }).select("room_specification");
+
+    // get unique specs only
+    const specs = [...new Set(rooms.map(r => r.room_specification))];
+
+    res.status(200).json(specs);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+exports.updateRoomSpecification = async (req, res) => {
+  try {
+    const { roomId } = req.params;
+    const { room_specification } = req.body;
+
+    const room = await Room.findByIdAndUpdate(
+      roomId,
+      { room_specification },
+      { new: true }
+    );
+
+    if (!room) return res.status(404).json({ message: "Room not found" });
+
+    logger.info({
+      message: `ROOM UPDATE SPEC -- Room ${room.room_name} spec updated to ${room_specification}`,
+      method: req.method,
+      ip: req.ip,
+    });
+
+    res.status(200).json({ message: "Room specification updated successfully", room });
+  } catch (error) {
+    logger.error({
+      message: `ROOM UPDATE SPEC -- ${error.message}`,
+      method: req.method,
+      ip: req.ip,
+    });
+    res.status(500).json({ message: error.message });
+  }
+};

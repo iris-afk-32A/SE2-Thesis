@@ -138,7 +138,7 @@ export default function OrganizationPage() {
                 >
                   <div className="flex flex-row justify-between items-center w-full p-4">
                     <span className="text-base">{member.first_name} {member.last_name}</span>
-                    <span className="text-base">{member.email}</span>
+                    <span className="text-base absolute right-198 w-20 text-left">{member.email}</span>
                     <div className="flex items-center gap-4 w-20 justify-end">
                       {member.first_name === user?.first_name && member.last_name === user?.last_name && (
                         <button

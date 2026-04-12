@@ -39,6 +39,8 @@ const DeviceRouter = require("./Routes/device");
 const AuthRouter = require("./Routes/auth");
 const OrganizationRouter = require("./Routes/organization");
 const PointRouter = require("./Routes/points");
+const SubjectRouter = require("./Routes/subject");
+const ScheduleRouter = require("./Routes/schedule");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -59,11 +61,15 @@ app.use("/room", RoomRouter);
 app.use("/points", PointRouter);
 
 app.use("/room/add", requestLimiter);
-app.use("/room/list", requestLimiter);
 app.use("/device", DeviceRouter);
 app.use("/organization", OrganizationRouter);
 app.use("/organization/addOrganization", requestLimiter);
 app.use("/organization/getOrganization", requestLimiter);
+app.use("/subject/create", requestLimiter);
+app.use("/subject/list", requestLimiter);
+app.use("/subject", SubjectRouter);
+app.use("/schedule", ScheduleRouter);
+app.use("/schedule/room/:roomId", requestLimiter);
 
 
 

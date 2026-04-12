@@ -82,3 +82,30 @@ export const detectFrame = async (formData) => {
     throw error;
   }
 };
+
+export const getRoomSpecifications = async (roomId) => {
+  try {
+    const token = localStorage.getItem("token");
+    const response = await axiosClient.get(`/room/specs/${roomId}`, {
+      headers: { Authorization: `Bearer ${token}` }
+    });
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const updateRoomSpecification = async (roomId, room_specification) => {
+  try {
+    const token = localStorage.getItem("token");
+    if (!token) throw new Error("Unauthorized: Unknown user");
+    const response = await axiosClient.patch(`/room/${roomId}/specification`,
+      { room_specification },
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

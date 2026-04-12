@@ -3675,3 +3675,153 @@
 {"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:09:07"}
 {"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:09:16"}
 {"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:09:16"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:15:10"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:15:39"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:15:48"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:15:52"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:16:00"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:16:16"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:16:23"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:16:30"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:18:16"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:18:25"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:18:33"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: STI","method":"GET","timestamp":"2026-04-12 22:18:37"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:06"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:06"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:22"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:22"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:30"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:30"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:35"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:35"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:38"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:38"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:42"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:42"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:45"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:45"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:53"}
+{"ip":"::1","level":"info","message":"PENDING APPLICATIONS -- Fetched 0 pending applications for organization: STI","method":"GET","timestamp":"2026-04-12 22:19:53"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 22:34:33"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 22:34:34"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 22:37:43"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 22:37:43"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 22:38:21"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 22:38:21"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 22:38:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 22:38:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 22:38:52"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 22:38:52"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 22:39:02"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 22:39:03"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 22:39:36"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 22:39:36"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 23:14:40"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 23:14:40"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-12 23:25:51"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-12 23:25:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:17:53"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:18:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:18:03"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:18:42"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:18:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:18:58"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 00:24:05"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-13 00:24:05"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-13 00:24:06"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 00:24:31"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-13 00:24:31"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  __v: 0\n}","timestamp":"2026-04-13 00:24:31"}
+{"ip":"::1","level":"info","message":"SUBJECT CREATE -- Subject added CS101: With status code 201","method":"POST","timestamp":"2026-04-13 00:25:14"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:40:48"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:43:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:43:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 00:46:15"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:01:16"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-13 01:01:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:01:25"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email lamoba@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-13 01:05:41"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: '',\n  __v: 0\n}","timestamp":"2026-04-13 01:05:41"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email lamoba@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-13 01:05:57"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: '',\n  __v: 0\n}","timestamp":"2026-04-13 01:05:58"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:06:13"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:06:13"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: '',\n  __v: 0\n}","timestamp":"2026-04-13 01:06:13"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email dork.pdm@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-13 01:06:36"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: '',\n  __v: 0\n}","timestamp":"2026-04-13 01:06:37"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Mico data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:06:43"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:06:43"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: '',\n  __v: 0\n}","timestamp":"2026-04-13 01:06:43"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email lamoba@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-13 01:16:51"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:16:52"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:17:01"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:17:01"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:17:01"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:19:33"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:19:33"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:19:48"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:19:48"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:19:48"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:25:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:25:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:25:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:26:02"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:26:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:46:08"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:47:03"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:47:26"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:47:27"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-13 01:47:42"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email lamoba@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-13 01:48:02"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:48:02"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:48:50"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:48:50"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:48:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:52:03"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:52:07"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:52:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:52:26"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:52:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:52:26"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:55:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:55:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:55:38"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-13 01:55:46"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:55:47"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:55:47"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:55:47"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-13 01:55:49"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email lamoba@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-13 01:56:23"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:56:23"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 01:56:33"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 01:56:33"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 01:56:33"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 01:58:52"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 02:04:09"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 02:04:10"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 02:04:10"}
+{"ip":"::1","level":"info","message":"SCHEDULE CREATE -- Schedule added for room Mabuhey","method":"POST","timestamp":"2026-04-13 02:04:29"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 02:35:37"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 02:35:37"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 02:35:37"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added RoomBu: With status code 201","method":"POST","timestamp":"2026-04-13 02:39:51"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 02:39:55"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 02:39:55"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n},{\n  _id: new ObjectId('69dbe6f750e2b3821a836aee'),\n  room_name: 'RoomBu',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-13 02:39:55"}
+{"ip":"::1","level":"error","message":"SCHEDULE CREATE -- Schedule validation failed: subject: Cast to ObjectId failed for value \"\" (type string) at path \"subject\" because of \"BSONError\", day: Path `day` is required., time_start: Path `time_start` is required., time_end: Path `time_end` is required.","method":"POST","timestamp":"2026-04-13 02:40:03"}
+{"ip":"::1","level":"info","message":"SCHEDULE CREATE -- Schedule added for room RoomBu","method":"POST","timestamp":"2026-04-13 02:40:28"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 02:40:37"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 02:40:38"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n},{\n  _id: new ObjectId('69dbe6f750e2b3821a836aee'),\n  room_name: 'RoomBu',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-13 02:40:38"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 02:50:56"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email lamoba@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-13 02:51:16"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n},{\n  _id: new ObjectId('69dbe6f750e2b3821a836aee'),\n  room_name: 'RoomBu',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-13 02:51:16"}
+{"ip":"::1","level":"info","message":"ROOM UPDATE SPEC -- Room RoomBu spec updated to First floor","method":"PATCH","timestamp":"2026-04-13 02:51:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 02:51:32"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 02:51:32"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n},{\n  _id: new ObjectId('69dbe6f750e2b3821a836aee'),\n  room_name: 'RoomBu',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-13 02:51:32"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- La data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-13 02:52:22"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 1 subjects fetched","method":"GET","timestamp":"2026-04-13 02:52:22"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69dba496a91bb48a99ca8bd2'),\n  room_name: 'Mabuhey',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'First floor',\n  __v: 0\n},{\n  _id: new ObjectId('69dbe6f750e2b3821a836aee'),\n  room_name: 'RoomBu',\n  room_owner: { _id: new ObjectId('69c771c5817503a088feb03c'), first_name: 'La' },\n  room_occupants: 0,\n  room_organization: 'STI',\n  room_specification: 'Second floor',\n  __v: 0\n}","timestamp":"2026-04-13 02:52:22"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-13 02:52:42"}
