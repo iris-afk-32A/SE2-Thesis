@@ -4463,3 +4463,191 @@
 {"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- Cast to ObjectId failed for value \"Vision Impaired Org\" (type string) at path \"user_organization\" for model \"User\"","method":"GET","timestamp":"2026-04-14 22:48:56"}
 {"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 22:49:00"}
 {"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-14 22:49:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 22:50:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 22:51:06"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 22:51:27"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-14 22:51:34"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 22:51:46"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 22:52:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 22:53:36"}
+{"ip":"::1","level":"error","message":"AUTH USERDATA -- Cannot read properties of null (reading 'first_name') with status code (500)","method":"GET","timestamp":"2026-04-14 22:59:55"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-14 23:00:22"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-14 23:00:26"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-14 23:00:31"}
+{"ip":"::1","level":"info","message":"AUTH REGISTER -- Registered the user trizxd123@gmail.com: With status code 201","method":"POST","timestamp":"2026-04-14 23:00:46"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-14 23:00:52"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:01:36"}
+{"ip":"::1","level":"info","message":"ORGANIZATION CREATE -- Organization added Stardust Crusaders: With status code 201","method":"POST","timestamp":"2026-04-14 23:01:44"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:02:32"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:02:32"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:02:32"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: 69de56d88cb358a2e7f9e7f5","method":"GET","timestamp":"2026-04-14 23:02:36"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: 69de56d88cb358a2e7f9e7f5","method":"GET","timestamp":"2026-04-14 23:04:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:08:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:09:00"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:09:09"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:09:19"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:09:19"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:09:19"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: 69de56d88cb358a2e7f9e7f5","method":"GET","timestamp":"2026-04-14 23:09:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:09:38"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:09:53"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:09:55"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:09:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:06"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:15"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:10:16"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:10:17"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:10:17"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: 69de56d88cb358a2e7f9e7f5","method":"GET","timestamp":"2026-04-14 23:10:17"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:38"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:54"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:10:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:11:01"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:11:02"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:11:02"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:11:02"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:11:02"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:11:06"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:11:06"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:11:06"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:11:06"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:11:17"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:11:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:11:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:11:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:12:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:12:04"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:12:05"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:12:05"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:12:05"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:12:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:12:23"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:12:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:12:32"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:12:33"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:12:34"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:12:34"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:12:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:13:04"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:13:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:13:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:13:47"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:13:50"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:13:50"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:13:50"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:13:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:14:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:14:07"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:14:10"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:14:10"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:14:11"}
+{"ip":"::ffff:127.0.0.1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:14:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:15:25"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:15:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:15:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:15:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:15:53"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:15:56"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:15:57"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:15:57"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:15:57"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:15:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:14"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:22"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:27"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:16:29"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:16:29"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:16:29"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:16:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:16:53"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:16:54"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:16:54"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:16:54"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:16:54"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:08"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:18"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:21"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:17:29"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:17:29"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:17:29"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:30"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:18:37"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:18:39"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:18:41"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:18:41"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:18:41"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:18:42"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:09"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:10"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:14"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:15"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:19:18"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:19:18"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:19:18"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:21:09"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:21:13"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:21:13"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:21:13"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:21:13"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:28"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:30"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:34"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:38"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:40"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:42"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:44"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:22:45"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:23:09"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:23:15"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:23:15"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:23:15"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:23:15"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:23:21"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:23:21"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:23:21"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:23:21"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:23:28"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:23:28"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:23:28"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:23:28"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:23:30"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:23:30"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:23:30"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:23:30"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:23:51"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:23:57"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:24:02"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:27:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:27:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:29:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:29:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:29:47"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:31:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:31:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:31:20"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-14 23:31:23"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:31:36"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:31:44"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:31:51"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:31:51"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:31:51"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusaders","method":"GET","timestamp":"2026-04-14 23:31:51"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:32:35"}
+{"ip":"::1","level":"info","message":"ORGANIZATION CREATE -- Organization added Italian Mafia: With status code 201","method":"POST","timestamp":"2026-04-14 23:32:46"}
+{"ip":"::1","level":"info","message":"AUTH REGISTER -- Registered the user trizxd123@gmail.com: With status code 201","method":"POST","timestamp":"2026-04-14 23:51:05"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-14 23:51:08"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:51:41"}
+{"ip":"::1","level":"info","message":"ORGANIZATION CREATE -- Organization added Stardust Crusader: With status code 201","method":"POST","timestamp":"2026-04-14 23:51:48"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-14 23:52:15"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-14 23:52:15"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-14 23:52:15"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-14 23:52:16"}

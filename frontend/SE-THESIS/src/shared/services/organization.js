@@ -11,6 +11,8 @@ export const addOrganization = async (orgData) => {
         Authorization: `Bearer ${token}`,
       },
     });
+
+    localStorage.setItem("token", response.data.token);
     return response.data;
   } catch (error) {
     console.error(error);
@@ -36,7 +38,7 @@ export const getOrganization = async () => {
   }
 };
 
-export const getOrganizationMembers = async (organizationName) => {
+export const getOrganizationMembers = async (organizationID) => {
   try {
     const token = localStorage.getItem("token");
     if (!token) {
@@ -44,12 +46,13 @@ export const getOrganizationMembers = async (organizationName) => {
     }
     const response = await axiosClient.get("/organization/getMembers", {
       params: {
-        organization: organizationName,
+        organization: organizationID,
       },
       headers: {
         Authorization: `Bearer ${token}`,
       },
     });
+    // console.log("API response for getOrganizationMembers:", response.data);
     return response.data;
   } catch (error) {
     console.error(error);

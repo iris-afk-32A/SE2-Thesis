@@ -25,14 +25,24 @@ export default function OrganizationPage() {
       try {
         setLoading(true);
         // Use the organization name directly from user data
-        setOrganizationName(user?.user_organization || null);
+        
+        console.log("User organization:", user);
+        
+        const membersData = await getOrganizationMembers(user.user_organization);
+        setOrganizationName(membersData.organization || null);
+        setMembers(membersData.members || []);
+        setFilteredMembers(membersData.members || []);
+
+
+        console.log("Fetched members data:", membersData);
 
         // Fetch members if user has an organization
-        if (user?.user_organization) {
-          const membersData = await getOrganizationMembers(user.user_organization);
-          setMembers(membersData.members || []);
-          setFilteredMembers(membersData.members || []);
-        }
+        // if (user?.user_organization) {
+        //   const membersData = await getOrganizationMembers(user.user_organization);
+        //   // setMembers(membersData.members || []);
+        //   // setFilteredMembers(membersData.members || []);
+        //   console.log("Fetched members data:", membersData);
+        // }
       } catch (err) {
         console.error("Error fetching organization members:", err);
         setError("Failed to load organization members");

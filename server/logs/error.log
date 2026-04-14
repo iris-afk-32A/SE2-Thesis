@@ -179,3 +179,28 @@
 {"ip":"::1","level":"error","message":"ACTIVITY FETCHED -- Cast to ObjectId failed for value \"undefined\" (type string) at path \"room_id\" for model \"Activity\"","method":"GET","timestamp":"2026-04-13 23:00:47"}
 {"ip":"::1","level":"error","message":"ACTIVITY FETCHED -- Cast to ObjectId failed for value \"undefined\" (type string) at path \"room_id\" for model \"Activity\"","method":"GET","timestamp":"2026-04-13 23:01:14"}
 {"ip":"::1","level":"error","message":"ACTIVITY FETCHED -- Cast to ObjectId failed for value \"undefined\" (type string) at path \"room_id\" for model \"Activity\"","method":"GET","timestamp":"2026-04-13 23:02:17"}
+{"ip":"::1","level":"error","message":"AUTH USERDATA -- Cannot read properties of null (reading 'first_name') with status code (500)","method":"GET","timestamp":"2026-04-14 22:59:55"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-14 23:00:22"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-14 23:00:26"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-14 23:00:31"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:11:02"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:11:06"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:12:05"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:12:34"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:13:50"}
+{"ip":"::ffff:127.0.0.1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:14:11"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:15:57"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:16:29"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:16:54"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:08"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:18"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:21"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:17:30"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:18:37"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:18:39"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:18:42"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:09"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:10"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:14"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:15"}
+{"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:18"}

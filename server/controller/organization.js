@@ -1,5 +1,6 @@
 require("dotenv").config();
 const logger = require("../utils/logger");
+const jwt = require("jsonwebtoken");
 const { getIO } = require("../config/socket");
 const Organization = require("../models/organization_model");
 const User = require("../models/user_model");
@@ -25,11 +26,30 @@ exports.addOrg = async (req, res, next) => {
       organization_owner: userID,
     });
 
-    
     await org.save();
-    
-    await User.findByIdAndUpdate(userID, { user_organization: org._id }, { new: true });
-    
+
+    const updatedUser = await User.findByIdAndUpdate(
+      userID,
+      {
+        user_organization: org._id,
+        is_admin: true,
+        is_authorized: true,
+      },
+      { new: true },
+    );
+
+    const newToken = jwt.sign(
+      {
+        userID: updatedUser._id,
+        email: updatedUser.email,
+        is_admin: updatedUser.is_admin,
+        is_authorized: updatedUser.is_authorized,
+        user_organization: updatedUser.user_organization,
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: "7d" },
+    );
+
     io.emit("orgAdded", {
       _id: org._id,
       organization_name: org.organization_name,
@@ -45,6 +65,9 @@ exports.addOrg = async (req, res, next) => {
 
     return res.status(201).json({
       message: "Organization Added",
+      token: newToken,
+      user: updatedUser,
+      organization: org,
     });
   } catch (error) {
     logger.error({
@@ -58,9 +81,7 @@ exports.addOrg = async (req, res, next) => {
 
 exports.getOrg = async (req, res) => {
   try {
-
-    const organization = await Organization.find({
-    });
+    const organization = await Organization.find({});
 
     console.log("ORGANIZATION FOUND:", organization);
 
@@ -75,29 +96,36 @@ exports.getOrg = async (req, res) => {
 
 exports.getOrgMembers = async (req, res) => {
   try {
-    const User = require("../models/user_model");
-    const { organization } = req.query;
+    // const { organization } = req.query;
 
-    console.log("GET ORG MEMBERS -- Received organization query:", req.query);
+    // console.log("GET ORG MEMBERS -- Received organization query:", req.query);
 
-    if (!organization) {
-      return res.status(400).json({
-        message: "Organization name is required",
-      });
-    }
-
-    const members = await User.find({ user_organization: organization }).select(
-      "first_name last_name email is_authorized"
+    const orgName = await Organization.findById(req.query.organization).select(
+      "organization_name",
     );
 
+    console.log("GET ORG MEMBERS -- Found organization:", orgName);
+
+    if (!orgName) {
+      return res.status(404).json({ message: "Organization not found" });
+    }
+
+    const members = await User.find({
+      user_organization: req.query.organization,
+    }).select("first_name last_name email is_authorized");
+
+    console.log("GET ORG MEMBERS -- Found members:", members);
+
+    console.log("REQ QUERY:", req.query);
+
     logger.info({
-      message: `ORGANIZATION MEMBERS -- Fetched ${members.length} members for organization: ${organization}`,
+      message: `ORGANIZATION MEMBERS -- Fetched ${members.length} members for organization: ${orgName.organization_name}`,
       method: req.method,
       ip: req.ip,
     });
 
     res.status(200).json({
-      organization,
+      organization: orgName.organization_name,
       members,
       memberCount: members.length,
     });
@@ -124,13 +152,15 @@ exports.removeMember = async (req, res) => {
     }
 
     // Get user info before updating to preserve organization name
-    const userBeforeUpdate = await User.findById(userId).select("first_name last_name user_organization");
+    const userBeforeUpdate = await User.findById(userId).select(
+      "first_name last_name user_organization",
+    );
     const orgName = userBeforeUpdate?.user_organization;
 
     const user = await User.findByIdAndUpdate(
       userId,
       { is_authorized: false, user_organization: "", applied_at: null },
-      { new: true }
+      { new: true },
     ).select("first_name last_name email");
 
     // Create a notification for the departure
@@ -142,14 +172,15 @@ exports.removeMember = async (req, res) => {
       });
 
       // Create departure notification
-      const departureMessage = actionType === "leave"
-        ? `${user.first_name} ${user.last_name} has left our organization`
-        : `${user.first_name} ${user.last_name} has been removed from our organization`;
+      const departureMessage =
+        actionType === "leave"
+          ? `${user.first_name} ${user.last_name} has left our organization`
+          : `${user.first_name} ${user.last_name} has been removed from our organization`;
 
       const notification = new Notification({
         organization_name: orgName,
         message: departureMessage,
-        type: actionType === "leave" ? 'leave' : 'removal',
+        type: actionType === "leave" ? "leave" : "removal",
         user_first_name: user.first_name,
         user_last_name: user.last_name,
       });
@@ -231,7 +262,7 @@ exports.approveApplication = async (req, res) => {
     const user = await User.findByIdAndUpdate(
       userId,
       { is_authorized: true },
-      { new: true }
+      { new: true },
     ).select("first_name last_name email user_organization");
 
     // Create a notification for the approved user
@@ -247,7 +278,7 @@ exports.approveApplication = async (req, res) => {
       const notification = new Notification({
         organization_name: user.user_organization,
         message: `${user.first_name} ${user.last_name} has joined our organization, give them a warm welcome!`,
-        type: 'join',
+        type: "join",
         user_first_name: user.first_name,
         user_last_name: user.last_name,
       });
@@ -289,7 +320,7 @@ exports.rejectApplication = async (req, res) => {
     const user = await User.findByIdAndUpdate(
       userId,
       { is_authorized: false, user_organization: "", applied_at: null },
-      { new: true }
+      { new: true },
     ).select("first_name last_name email");
 
     // Delete any old notifications for this user from their previous membership
