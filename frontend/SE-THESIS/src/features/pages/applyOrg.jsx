@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import Popover from "@mui/material/Popover";
 import { toast } from "sonner";
-import { addOrganization, getOrganization } from "../../shared/services/organization";
-import { updateOrganization } from "../../shared/services/authService.js";
+import { addOrganization, getOrganization, updateOrganization } from "../../shared/services/organization";
 import { useAuth } from "../../context/authContext.jsx";
 
 export default function ApplyOrg() {
@@ -32,7 +31,7 @@ export default function ApplyOrg() {
     }
     if (!selectedOrgName) return;
     try {
-      await updateOrganization(selectedOrgName, new Date());
+      await updateOrganization(selectedOrgName);
       toast.success("Organization applied successfully!");
     } catch (error) {
       console.error("Error applying organization:", error);

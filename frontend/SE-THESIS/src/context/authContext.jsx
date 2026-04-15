@@ -16,6 +16,8 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
+
+    console.log("Checking for token: ", token);
     if (token) {
       fetchCurrentUser(token);
     } else {
@@ -27,13 +29,14 @@ export const AuthProvider = ({ children }) => {
     try {
       const userData = await fetchUser(token);
       setUser(userData);
-      console.log(userData);
+      console.log("FETCH CURRENT USER -- userData:", userData);
     } catch (err) {
       console.error(err);
       localStorage.removeItem("token");
       setUser(null);
     } finally {
       setLoading(false);
+      console.log("FETCH CURRENT USER -- loading set to false");
     }
   };
 
@@ -48,6 +51,7 @@ export const AuthProvider = ({ children }) => {
       
       // Fetch the current user data after login
       await fetchCurrentUser(token);
+      console.log("LOGIN COMPLETE -- user should be set now");
       
       return {
         success: true,

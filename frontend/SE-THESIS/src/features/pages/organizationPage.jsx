@@ -19,15 +19,17 @@ export default function OrganizationPage() {
   const [memberToRemove, setMemberToRemove] = useState(null);
   const [isRemoving, setIsRemoving] = useState(false);
   const [actionType, setActionType] = useState(null);
+  const [isAuthorized, setIsAuthorized] = useState(false);
 
   useEffect(() => {
     const fetchOrgData = async () => {
       try {
         setLoading(true);
         // Use the organization name directly from user data
-        
-        console.log("User organization:", user);
-        
+
+        console.log("User organization:", user.is_authorized);
+        setIsAuthorized(user.is_authorized);
+
         const membersData = await getOrganizationMembers(user.user_organization);
         setOrganizationName(membersData.organization || null);
         setMembers(membersData.members || []);
@@ -85,12 +87,12 @@ export default function OrganizationPage() {
       setIsRemoving(true);
       await removeMemberFromOrganization(memberToRemove._id, actionType);
       toast.success(`${memberToRemove.first_name} ${memberToRemove.last_name} has been removed from the organization.`);
-      
+
       // Refresh members list
       const membersData = await getOrganizationMembers(user.user_organization);
       setMembers(membersData.members || []);
       setFilteredMembers(membersData.members || []);
-      
+
       handleClose();
     } catch (err) {
       console.error("Error removing member:", err);
@@ -128,7 +130,11 @@ export default function OrganizationPage() {
                 <span className="text-base font-semibold w-45"></span>
               </div>
             </div>
-            {loading ? (
+            {!isAuthorized ? (
+              <div className="flex items-center justify-center h-32 text-[#1E1E1E]">
+                <span>Please wait for your application to be approved...</span>
+              </div>
+            ) : loading ? (
               <div className="flex items-center justify-center h-32 text-[#1E1E1E]">
                 <span>Loading members...</span>
               </div>
@@ -147,18 +153,28 @@ export default function OrganizationPage() {
                   className="w-full h-16 border-b border-[#d4d3d1] flex items-center px-4 gap-4 hover:bg-[#d4d3d1] transition-colors"
                 >
                   <div className="flex flex-row justify-between items-center w-full p-4">
-                    <span className="text-base">{member.first_name} {member.last_name}</span>
-                    <span className="text-base absolute right-198 w-20 text-left">{member.email}</span>
+                    <span className="text-base">
+                      {member.first_name} {member.last_name}
+                    </span>
+
+                    <span className="text-base absolute right-198 w-20 text-left">
+                      {member.email}
+                    </span>
+
                     <div className="flex items-center gap-4 w-20 justify-end">
-                      {member.first_name === user?.first_name && member.last_name === user?.last_name && (
-                        <button
-                          onClick={(e) => handleRemoveClick(e, member, "leave")}
-                          className="p-1 hover:bg-[#A7A7A3] rounded transition-colors"
-                          title="Leave organization"
-                        >
-                          <img src={Leave} alt="Leave" className="w-5 h-5" />
-                        </button>
-                      )}
+                      {/* Leave org button (self) */}
+                      {member.first_name === user?.first_name &&
+                        member.last_name === user?.last_name && (
+                          <button
+                            onClick={(e) => handleRemoveClick(e, member, "leave")}
+                            className="p-1 hover:bg-[#A7A7A3] rounded transition-colors"
+                            title="Leave organization"
+                          >
+                            <img src={Leave} alt="Leave" className="w-5 h-5" />
+                          </button>
+                        )}
+
+                      {/* Remove member (admin) */}
                       {user?.is_admin && (
                         <button
                           onClick={(e) => handleRemoveClick(e, member, "remove")}
@@ -173,6 +189,7 @@ export default function OrganizationPage() {
                 </div>
               ))
             )}
+
           </div>
         </div>
       </section>
@@ -199,29 +216,32 @@ export default function OrganizationPage() {
           horizontal: "center",
         }}
       >
-        <div className="w-96 rounded-lg flex flex-col gap-4 p-5 bg-[#DFDEDA]">
-          <h2 className="text-lg font-semibold text-[#4F4F4F]">
+        <div className="w-96 rounded-lg flex flex-col gap-4 p-5 bg-[#DFDEDA] items-center">
+          <div className="w-27 h-27 rounded-full bg-[#A7A7A4] flex items-center justify-center shadow-inner-neumorphic text-[#E4E3E1] font-bold text-7xl">
+            !
+          </div>
+          <h2 className="text-lg font-bold text-[#4F4F4F] items-center justify-center flex gap-2">
             {actionType === "leave" ? "Leave Organization" : "Remove Member"}
           </h2>
-          <p className="text-base text-[#4F4F4F]">
+          <p className="text-base text-[#4F4F4F] text-center">
             {actionType === "leave"
               ? "Are you sure you want to leave the organization?"
               : `Are you sure you want to remove ${memberToRemove?.first_name} ${memberToRemove?.last_name} from your organization?`}
           </p>
-          <div className="flex flex-row gap-3 justify-end">
+          <div className="flex flex-row gap-3 justify-center">
             <button
               onClick={handleClose}
               disabled={isRemoving}
-              className="px-6 py-2 bg-[#A1A2A6] text-white rounded-lg text-base hover:bg-[#7E808C] transition-colors duration-300 disabled:opacity-50"
+              className="px-6 py-2 w-35 bg-[#DFDEDA] text-[#A1A2A6] rounded-lg drop-shadow-2xl font-bold text-base hover:bg-[#7E808C] transition-colors duration-300 disabled:opacity-50"
             >
               Cancel
             </button>
             <button
               onClick={handleConfirmRemove}
               disabled={isRemoving}
-              className="px-6 py-2 bg-[#A1A2A6] text-white rounded-lg text-base hover:bg-[#7E808C] transition-colors duration-300 disabled:opacity-50"
+              className="px-6 py-2 w-35 bg-[#A1A2A6] text-[#DFDEDA] rounded-lg shadow-2xl font-bold text-base hover:bg-[#7E808C] transition-colors duration-300 disabled:opacity-50"
             >
-              {isRemoving ? "Removing..." : "Yes"}
+              {isRemoving ? "Processing..." : actionType === "leave" ? "Leave" : "Remove"}
             </button>
           </div>
         </div>

@@ -158,3 +158,17 @@ export const getNotifications = async () => {
     throw error;
   }
 };
+
+export const updateOrganization = async (organizationName) => {
+  try {
+    const token = localStorage.getItem("token");
+    const response = await axiosClient.patch("/organization/update-organization", 
+      { org_name: organizationName },
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

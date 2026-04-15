@@ -144,6 +144,28 @@ export default function ActivityPage() {
         );
       }
 
+      // Improved fallback: Try to extract room name from quoted strings or after "in"
+      let extractedRoom = "";
+      if (roomMatch) {
+        extractedRoom = roomMatch[1];
+      } else {
+        // Try to extract room after "in" keyword
+        const inMatch = message.match(/in\s+(.+?)(?:\s+(?:lights|fans|have|turned|has|been))/i);
+        if (inMatch) {
+          extractedRoom = inMatch[1].replace(/^["']|["']$/g, "").trim();
+        }
+      }
+
+      if (extractedRoom) {
+        const cleanedMessage = message.replace(new RegExp(extractedRoom, "i"), "").trim();
+        return (
+          <span>
+            <span className="font-bold">{extractedRoom}</span>
+            {cleanedMessage && ` ${cleanedMessage}`}
+          </span>
+        );
+      }
+
       return <span>{message}</span>;
     }
 

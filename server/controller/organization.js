@@ -85,8 +85,6 @@ exports.getOrg = async (req, res) => {
 
     console.log("ORGANIZATION FOUND:", organization);
 
-    console.log("GET ORGANIZATION -- Request query:", organization._id);
-
     res.status(200).json(organization);
   } catch (error) {
     console.error("GET ORGANIZATION ERROR:", error);
@@ -112,6 +110,7 @@ exports.getOrgMembers = async (req, res) => {
 
     const members = await User.find({
       user_organization: req.query.organization,
+      is_authorized: true,
     }).select("first_name last_name email is_authorized");
 
     console.log("GET ORG MEMBERS -- Found members:", members);
@@ -141,9 +140,11 @@ exports.getOrgMembers = async (req, res) => {
 
 exports.removeMember = async (req, res) => {
   try {
-    const User = require("../models/user_model");
     const Notification = require("../models/notification_model");
+    const userID = req.userID;
     const { userId, actionType } = req.body;
+
+    console.log("REMOVE MEMBER -- Received userId:", userId, "actionType:", actionType);
 
     if (!userId) {
       return res.status(400).json({
@@ -151,20 +152,26 @@ exports.removeMember = async (req, res) => {
       });
     }
 
-    // Get user info before updating to preserve organization name
-    const userBeforeUpdate = await User.findById(userId).select(
-      "first_name last_name user_organization",
-    );
-    const orgName = userBeforeUpdate?.user_organization;
+    // Get the current user's organization
+    const currentUser = await User.findById(userID);
+    if (!currentUser || !currentUser.user_organization) {
+      return res.status(400).json({
+        message: "User does not belong to an organization",
+      });
+    }
+
+    const organization = await Organization.findById(currentUser.user_organization).select("organization_name");
 
     const user = await User.findByIdAndUpdate(
       userId,
-      { is_authorized: false, user_organization: "", applied_at: null },
+      { is_authorized: false, user_organization: null, applied_at: null },
       { new: true },
     ).select("first_name last_name email");
 
+    console.log("REMOVE MEMBER:", user);
+
     // Create a notification for the departure
-    if (user && orgName) {
+    if (user) {
       // First, delete any old notifications for this user
       await Notification.deleteMany({
         user_first_name: user.first_name,
@@ -178,7 +185,7 @@ exports.removeMember = async (req, res) => {
           : `${user.first_name} ${user.last_name} has been removed from our organization`;
 
       const notification = new Notification({
-        organization_name: orgName,
+        organization_name: organization.organization_name,
         message: departureMessage,
         type: actionType === "leave" ? "leave" : "removal",
         user_first_name: user.first_name,
@@ -267,35 +274,41 @@ exports.approveApplication = async (req, res) => {
 
     // Create a notification for the approved user
     if (user && user.user_organization) {
-      // First, delete any old notifications for this user in this organization
-      await Notification.deleteMany({
-        organization_name: user.user_organization,
-        user_first_name: user.first_name,
-        user_last_name: user.last_name,
+      // Get the organization name
+      const organization = await Organization.findById(user.user_organization).select("organization_name");
+
+      if (organization) {
+        // First, delete any old notifications for this user in this organization
+        await Notification.deleteMany({
+          organization_name: organization.organization_name,
+          user_first_name: user.first_name,
+          user_last_name: user.last_name,
+        });
+
+        // Then create the new join notification
+        const notification = new Notification({
+          organization_name: organization.organization_name,
+          message: `${user.first_name} ${user.last_name} has joined our organization, give them a warm welcome!`,
+          type: "join",
+          user_first_name: user.first_name,
+          user_last_name: user.last_name,
+        });
+        await notification.save();
+      }
+
+      logger.info({
+        message: `ORGANIZATION APPLICATION APPROVED -- ${user.first_name} ${user.last_name} approved for organization: ${user.user_organization}`,
+        method: req.method,
+        ip: req.ip,
       });
 
-      // Then create the new join notification
-      const notification = new Notification({
-        organization_name: user.user_organization,
-        message: `${user.first_name} ${user.last_name} has joined our organization, give them a warm welcome!`,
-        type: "join",
-        user_first_name: user.first_name,
-        user_last_name: user.last_name,
+      res.status(200).json({
+        message: "Application approved successfully",
+        user,
       });
-      await notification.save();
-    }
-
-    logger.info({
-      message: `ORGANIZATION APPLICATION APPROVED -- ${user.first_name} ${user.last_name} approved for organization: ${user.user_organization}`,
-      method: req.method,
-      ip: req.ip,
-    });
-
-    res.status(200).json({
-      message: "Application approved successfully",
-      user,
-    });
-  } catch (error) {
+    } 
+  }
+  catch (error) {
     logger.error({
       message: `ORGANIZATION APPLICATION APPROVE -- ${error.message}`,
       method: req.method,
@@ -319,7 +332,7 @@ exports.rejectApplication = async (req, res) => {
 
     const user = await User.findByIdAndUpdate(
       userId,
-      { is_authorized: false, user_organization: "", applied_at: null },
+      { is_authorized: false, user_organization: null, applied_at: null },
       { new: true },
     ).select("first_name last_name email");
 
@@ -365,9 +378,17 @@ exports.getNotifications = async (req, res) => {
       });
     }
 
+    // Get the organization name
+    const organization = await Organization.findById(currentUser.user_organization).select("organization_name");
+    if (!organization) {
+      return res.status(404).json({
+        message: "Organization not found",
+      });
+    }
+
     // Get all notifications for the organization
     const notifications = await Notification.find({
-      organization_name: currentUser.user_organization,
+      organization_name: organization.organization_name,
     }).sort({ created_at: -1 });
 
     logger.info({
@@ -383,6 +404,38 @@ exports.getNotifications = async (req, res) => {
   } catch (error) {
     logger.error({
       message: `NOTIFICATIONS -- ${error.message}`,
+      method: req.method,
+      ip: req.ip,
+    });
+    res.status(500).json({ message: error.message });
+  }
+};
+
+exports.updateOrganization = async (req, res) => {
+  try {
+    const { org_name } = req.body;
+    const userID = req.userID;
+    const organization = await Organization.findOne({ organization_name: org_name });
+
+    const user = await User.findByIdAndUpdate(
+      req.userID,
+      { user_organization: organization._id, applied_at: new Date() },
+      { new: true }
+    );
+
+    console.log("UPDATE ORGANIZAITON: ", req.body);
+    console.log("Organization found: ", organization);
+
+    logger.info({
+      message: `AUTH UPDATE ORG -- ${user.first_name} updated organization to ${org_name}`,
+      method: req.method,
+      ip: req.ip,
+    });
+
+    res.json({ message: "Organization updated successfully", user });
+  } catch (error) {
+    logger.error({
+      message: `AUTH UPDATE ORG -- ${error.message} with status code (500)`,
       method: req.method,
       ip: req.ip,
     });

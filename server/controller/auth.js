@@ -174,34 +174,50 @@ exports.isFirstTime = async (req, res, next) => {
   }
 };
 
-exports.updateOrganization = async (req, res) => {
+exports.validateEmail = async (req, res) => {
   try {
-    const { user_organization, applied_at } = req.body;
-    const updateData = { user_organization };
+    const { email } = req.body;
     
-    if (applied_at) {
-      updateData.applied_at = new Date(applied_at);
+    if (!email) {
+      return res.status(400).json({
+        message: "Email is required",
+        exists: false
+      });
     }
+
+    const user = await User.findOne({ email });
     
-    const user = await User.findByIdAndUpdate(
-      req.userID,
-      updateData,
-      { new: true }
-    ).select("first_name user_organization applied_at");
-
-    logger.info({
-      message: `AUTH UPDATE ORG -- ${user.first_name} updated organization to ${user_organization} at ${applied_at || 'unknown time'}`,
-      method: req.method,
-      ip: req.ip,
-    });
-
-    res.json({ message: "Organization updated successfully", user });
+    if (user) {
+      logger.info({
+        message: `AUTH VALIDATEEMAIL -- Email ${email} validated successfully`,
+        method: req.method,
+        ip: req.ip,
+      });
+      return res.status(200).json({
+        message: "Email exists",
+        exists: true
+      });
+    } else {
+      logger.warn({
+        message: `AUTH VALIDATEEMAIL -- Email ${email} does not exist`,
+        method: req.method,
+        ip: req.ip,
+      });
+      return res.status(400).json({
+        message: "Email does not exist",
+        exists: false
+      });
+    }
   } catch (error) {
     logger.error({
-      message: `AUTH UPDATE ORG -- ${error.message} with status code (500)`,
+      message: `AUTH VALIDATEEMAIL -- ${error.message} with status code (500)`,
       method: req.method,
       ip: req.ip,
     });
-    res.status(500).json({ message: error.message });
+    res.status(500).json({
+      message: "It seems like there was a problem connecting to server",
+      exists: false
+    });
   }
 };
+

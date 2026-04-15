@@ -7,6 +7,7 @@ import { socket } from "../../shared/services/socketService.js";
 import { useRooms } from "../../context/roomContext.jsx";
 import { useCamera } from "../../context/cameraContext.jsx";
 import { useActivity } from "../../context/activityContext.jsx";
+import { useAuth } from "../../context/authContext.jsx";
 import { getDevice } from "../../shared/services/deviceService.js";
 
 export default function dashboard() {
@@ -14,13 +15,25 @@ export default function dashboard() {
   const [showGuide, setShowGuide] = useState(false);
   const { rooms } = useRooms();
   const { activities } = useActivity();
+  const { user } = useAuth();
   const emptyRooms = rooms.filter((room) => room.room_occupants > 0).length;
   const vacantRoom = rooms.filter((room) => room.room_occupants === 0).length;
   const { startCamera, startFrameCapture, initializeRoomCamera } = useCamera();
   const [availableCameras, setAvailableCameras] = useState([]);
 
+  // Check if user is authorized and admin
+  const canViewActivities = user?.is_authorized && user?.is_admin;
+
+  // Filter activities to only show those from rooms in the same organization
+  const filteredActivities = canViewActivities
+    ? activities.filter((activity) => {
+        const room = rooms.find((r) => r.room_name === activity.roomName);
+        return room && room.room_organization === user.user_organization;
+      })
+    : [];
+
   // Get 5 most recent activities
-  const recentActivities = activities.slice(0, 5);
+  const recentActivities = filteredActivities.slice(0, 5);
 
   const renderActivityMessage = (activity) => {
     // Handle old message format for backward compatibility
@@ -239,28 +252,30 @@ export default function dashboard() {
               {vacantRoom}
             </div>
           </div>
-          <div className="flex flex-col w-full h-61 items-start gap-4 pad-4 primary-text">
-            <h2 className="text-title">Activity History</h2>
-            <div className="w-full h-full rounded-2xl shadow-outside-dropshadow overflow-y-auto p-4 flex flex-col gap-3 pr-6 activity-scroll">
-              {recentActivities.length === 0 ? (
-                <p className="text-subtitle text-[#999] font-light">
-                  No activities yet
-                </p>
-              ) : (
-                recentActivities.map((activity) => (
-                  <div
-                    key={activity.id}
-                    className="flex flex-row items-center gap-3 pb-3 border-b border-gray-300 last:border-b-0"
-                  >
-                    <p className="bg-[#A7A7A4] w-7 aspect-square rounded-full text-center text-[#E4E3E1] font-bold text-lg">
-                      !
-                    </p>
-                    <p>{renderActivityMessage(activity)}</p>
-                  </div>
-                ))
-              )}
+          {canViewActivities && (
+            <div className="flex flex-col w-full h-61 items-start gap-4 pad-4 primary-text">
+              <h2 className="text-title">Activity History</h2>
+              <div className="w-full h-full rounded-2xl shadow-outside-dropshadow overflow-y-auto p-4 flex flex-col gap-3 pr-6 activity-scroll">
+                {recentActivities.length === 0 ? (
+                  <p className="text-subtitle text-[#999] font-light">
+                    No activities yet
+                  </p>
+                ) : (
+                  recentActivities.map((activity) => (
+                    <div
+                      key={activity.id}
+                      className="flex flex-row items-center gap-3 pb-3 border-b border-gray-300 last:border-b-0"
+                    >
+                      <p className="bg-[#A7A7A4] w-7 aspect-square rounded-full text-center text-[#E4E3E1] font-bold text-lg">
+                        !
+                      </p>
+                      <p>{renderActivityMessage(activity)}</p>
+                    </div>
+                  ))
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className="relative w-full h-full flex flex-col gap-4">

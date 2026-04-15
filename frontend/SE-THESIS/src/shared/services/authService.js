@@ -49,16 +49,14 @@ export const checkFirstTime = async () => {
   }
 };
 
-export const updateOrganization = async (organizationId, appliedAt) => {
+export const validateUserEmail = async (email) => {
   try {
-    const token = localStorage.getItem("token");
-    const response = await axiosClient.patch("/auth/update-organization", 
-      { user_organization: organizationId, applied_at: appliedAt },
-      { headers: { Authorization: `Bearer ${token}` } }
-    );
+    const response = await axiosClient.post("/auth/validate-email", { email });
     return response.data;
   } catch (error) {
     console.error(error);
     throw error;
   }
 };
+
+

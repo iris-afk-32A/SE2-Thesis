@@ -46,6 +46,14 @@ const userSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  reset_otp: {
+    type: String,
+    default: null
+  },
+  reset_otp_expiry: {
+    type: Date,
+    default: null
+  }
 });
 
 const User = mongoose.model("User", userSchema);

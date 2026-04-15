@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProfileSidebar from "../../shared/components/layouts/profileSidebar";
 import PersonalInfo from "./personalInfo";
 import ApplyOrg from "./applyOrg";
 import Logout from "./logout";
 import { useAuth } from "../../context/authContext.jsx";
+
 
 const TAB_COMPONENTS = {
   personal: PersonalInfo,
@@ -12,9 +13,18 @@ const TAB_COMPONENTS = {
 };
 
 export default function ProfilePage() {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
+  console.log("PROFILE PAGE RENDER -- user:", user, "loading:", loading);
   const [activeTab, setActiveTab] = useState("personal");
   const ActiveTabComponent = TAB_COMPONENTS[activeTab];
+
+  if (loading) {
+    return (
+      <section className="relative w-screen h-screen flex items-center justify-center bg-[#E4E3E1]">
+        <span className="text-[#858585]">Loading...</span>
+      </section>
+    );
+  }
 
   return (
     <section className="relative w-screen h-screen flex flex-col gap-2 bg-[#E4E3E1] px-12 py-6">

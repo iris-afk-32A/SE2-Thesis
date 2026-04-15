@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronLeft } from "lucide-react";
 import changeProfile from "@/assets/icons/changeProfile.png";
 import personalInfo from "@/assets/icons/personalInfo.png";
@@ -7,6 +7,7 @@ import logout from "@/assets/icons/logout.png";
 import personalInfo_w from "@/assets/icons/personalInfo_w.png";
 import applyOrg_w from "@/assets/icons/applyOrg_w.png";
 import logout_w from "@/assets/icons/logout_w.png";
+import { getOrganization } from "@/shared/services/organization";
 
 const NAV_ITEMS = [
   { key: "personal", label: "Personal Information", icon: personalInfo, iconActive: personalInfo_w },
@@ -15,6 +16,27 @@ const NAV_ITEMS = [
 ];
 
 export default function ProfileSidebar({ activeTab, onTabChange, user }) {
+  const [organizationName, setOrganizationName] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (user?.is_authorized && user?.user_organization) {
+      const fetchOrganizationName = async () => {
+        try {
+          setLoading(true);
+          const organizations = await getOrganization();
+          const org = organizations.find((o) => o._id === user.user_organization);
+          setOrganizationName(org?.organization_name || "Organization not found");
+        } catch (error) {
+          console.error("Error fetching organization:", error);
+          setOrganizationName("Error loading organization");
+        } finally {
+          setLoading(false);
+        }
+      };
+      fetchOrganizationName();
+    }
+  }, [user?.user_organization, user?.is_authorized]);
   return (
     <div className="relative w-[18vw] h-full aspect-video rounded-2xl shadow-outside-dropshadow flex flex-col justify-start items-center text-header pt-4 px-4">
       <button
@@ -30,7 +52,7 @@ export default function ProfileSidebar({ activeTab, onTabChange, user }) {
         {user ? `${user.first_name} ${user.last_name}` : "Loading..."}
       </h2>
       <p className="text-sm text-[#858585] mb-6">
-        {user?.is_authorized ? user.user_organization : "No organization"}
+        {user?.is_authorized ? (loading ? "Loading..." : organizationName || "No organization") : "No organization"}
       </p>
 
       <div className="flex flex-col gap-3 w-full pt-30">
