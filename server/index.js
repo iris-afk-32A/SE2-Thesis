@@ -42,6 +42,7 @@ const PointRouter = require("./Routes/points");
 const SubjectRouter = require("./Routes/subject");
 const ScheduleRouter = require("./Routes/schedule");
 const ActivityRouter = require("./Routes/activity");
+const ArduinoRouter = require("./Routes/arduino");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -73,6 +74,8 @@ app.use("/subject/list", requestLimiter);
 app.use("/subject", SubjectRouter);
 app.use("/schedule", ScheduleRouter);
 app.use("/schedule/room/:roomId", requestLimiter);
+
+app.use("/control", ArduinoRouter);
 
 
 

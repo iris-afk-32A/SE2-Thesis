@@ -5,6 +5,7 @@ frontend/node_modules/
 frontend/.env
 server/node_modules/
 server/.env
+server/logs/
 
 # Ignore Python cache files
 backend/venv
@@ -17,3 +18,4 @@ backend/model
 
 .DS_Store
 .env
+*.log

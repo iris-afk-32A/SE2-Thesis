@@ -17,6 +17,7 @@ import { socket } from "../../services/socketService";
 import { Toaster } from "../../components/ui/sonner";
 import { useCamera } from "../../../context/cameraContext";
 import { toast } from "sonner";
+import { turnOnDevice } from "../../services/arduinoService";
 import {
   addPoints,
   getROIPoints,
@@ -673,6 +674,7 @@ export default function ViewClassroom({
     setLightsOn(newState);
     setDeviceState(roomId, newState, fansOn);
     const action = newState ? "turned_on" : "turned_off";
+    await turnOnDevice({ command: newState ? "ALL_ON" : "ALL_OFF" });
     addActivity(roomName, action, "lights");
 
     const res = await recordActivity({
