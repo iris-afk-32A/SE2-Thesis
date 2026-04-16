@@ -106,7 +106,18 @@ export default function LoginPage() {
 
     try {
       setIsSubmittingForgotPassword(true);
-      await sendOTP(forgotPasswordEmail); // 👈 sends OTP and validates email in one shot
+      
+      // First, validate that the email exists
+      try {
+        await validateUserEmail(forgotPasswordEmail);
+      } catch (validationError) {
+        toast.error("User with this email not found");
+        setIsSubmittingForgotPassword(false);
+        return;
+      }
+      
+      // If email exists, send OTP
+      await sendOTP(forgotPasswordEmail);
       setForgotPasswordDialogOpen(false);
       setOtpDialogOpen(true);
       setOtpInput("");

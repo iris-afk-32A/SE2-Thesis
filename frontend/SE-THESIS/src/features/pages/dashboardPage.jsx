@@ -22,7 +22,7 @@ export default function dashboard() {
   const [availableCameras, setAvailableCameras] = useState([]);
 
   // Check if user is authorized and admin
-  const canViewActivities = user?.is_authorized && user?.is_admin;
+  const canViewActivities = user?.is_authorized || user?.is_admin;
 
   useEffect(() => {
     console.log("DASHBOARD ROOMS UPDATED:", rooms);
@@ -40,8 +40,10 @@ export default function dashboard() {
   const recentActivities = filteredActivities.slice(0, 5);
 
   useEffect(() => {
-    setEmptyRooms(rooms.filter((room) => (room.people_count ?? 0) >= 1).length);
-    setVacantRoom(rooms.filter((room) => (room.people_count ?? 0) < 1).length);
+    setEmptyRooms(rooms.filter((room) => (room.people_count ?? 0) > 0).length);
+    setVacantRoom(
+      rooms.filter((room) => (room.people_count ?? 0) === 0).length,
+    );
   }, [rooms]);
 
   const renderActivityMessage = (activity) => {
@@ -153,11 +155,11 @@ export default function dashboard() {
             continue;
           }
 
-          // console.log(
-          //   "INITIALIZING CAMERA:",
-          //   room.room_name,
-          //   matchedCamera.label,
-          // );
+          console.log(
+            "INITIALIZING CAMERA:",
+            room.room_name,
+            matchedCamera.label,
+          );
 
           await startCamera(room._id, matchedCamera.deviceId);
           startFrameCapture(room._id);
@@ -186,7 +188,7 @@ export default function dashboard() {
         );
 
         setAvailableCameras(videoInputs);
-        // console.log("AVAILABLE CAMERAS:", videoInputs);
+        console.log("AVAILABLE CAMERAS:", videoInputs);
       } catch (err) {
         console.error("Error loading available cameras:", err);
       }
@@ -261,62 +263,39 @@ export default function dashboard() {
               {vacantRoom}
             </div>
           </div>
-          {canViewActivities && (
-            <div className="flex flex-col w-full h-61 items-start gap-4 pad-4 primary-text">
-              <h2 className="text-title">Activity History</h2>
-              <div className="w-full h-full rounded-2xl shadow-outside-dropshadow overflow-y-auto p-4 flex flex-col gap-3 pr-6 activity-scroll">
-                {recentActivities.length === 0 ? (
-                  <p className="text-subtitle text-[#999] font-light">
-                    No activities yet
-                  </p>
-                ) : (
-                  recentActivities.map((activity) => (
-                    <div
-                      key={activity.id}
-                      className="flex flex-row items-center gap-3 pb-3 border-b border-gray-300 last:border-b-0"
-                    >
-                      <p className="bg-[#A7A7A4] w-7 aspect-square rounded-full text-center text-[#E4E3E1] font-bold text-lg">
-                        !
-                      </p>
-                      <p>{renderActivityMessage(activity)}</p>
-                    </div>
-                  ))
-                )}
-              </div>
+          <div className="flex flex-col w-full h-47 items-start gap-4 pad-4 primary-text">
+            <h2 className="text-title">Activity History</h2>
+            <div className="w-full h-61 rounded-2xl shadow-outside-dropshadow overflow-y-auto p-4 flex flex-col gap-3 pr-6 activity-scroll">
+              {!canViewActivities ? (
+                <p className="w-full h-full flex items-center justify-center text-subtitle text-[#999] font-light">
+                  You don't have permission to view activities
+                </p>
+              ) : recentActivities.length === 0 ? (
+                <p className="w-full h-full flex items-center justify-center text-subtitle text-[#999] font-light">
+                  No activities yet
+                </p>
+              ) : (
+                recentActivities.map((activity) => (
+                  <div
+                    key={activity.id}
+                    className="flex flex-row items-center gap-3 pb-3 border-b border-gray-300 last:border-b-0"
+                  >
+                    <p className="bg-[#A7A7A4] w-7 aspect-square rounded-full text-center text-[#E4E3E1] font-bold text-lg">
+                      !
+                    </p>
+                    <p>{renderActivityMessage(activity)}</p>
+                  </div>
+                ))
+              )}
             </div>
-          )}
+          </div>
         </div>
 
         <div className="relative w-full h-full flex flex-col gap-4">
           <h1 className="text-title primary-text font-bold">
             Classroom Status
           </h1>
-          <div className="w-full h-full min-h-0 rounded-2xl p-4 shadow-outside-dropshadow">
-            <div className="w-full h-full rounded-xl flex flex-col shadow-inside-dropshadow-small p-2 justify-center text-white font-bold text-2xl">
-              <div className="w-full border-b-2 border-gray-500/20 p-2 primary-text grid grid-cols-4 text-center">
-                <h2>Room</h2>
-                <h2>Status</h2>
-                <h2>Devices</h2>
-                <h2>Next Schedule</h2>
-              </div>
-
-              <div className="w-full h-full">
-                {rooms.map((room) => (
-                  <div
-                    key={room._id}
-                    className="w-full border-b border-gray-500/20 p-2 primary-text font-light grid grid-cols-4 text-center"
-                  >
-                    <p>{room.room_name}</p>
-                    <p>
-                      {(room.people_count ?? 0) >= 1 ? "Occupied" : "Vacant"}
-                    </p>
-                    <p>{(room.people_count ?? 0) >= 1 ? "On" : "Off"}</p>
-                    <p>None</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <div className="w-full h-full rounded-2xl shadow-outside-dropshadow"></div>
         </div>
       </section>
     </div>

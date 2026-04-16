@@ -208,9 +208,14 @@
 {"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:15"}
 {"ip":"::1","level":"error","message":"ORGANIZATION MEMBERS -- organization is not defined","method":"GET","timestamp":"2026-04-14 23:19:18"}
 >>>>>>> 5f9b3cc2d807dca69aa1e905b0b29abebf62c588
+<<<<<<< HEAD
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User hard@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-04-16 16:51:23"}
+{"ip":"::1","level":"error","message":"CLASSROOM REQUEST APPROVE -- Room validation failed: room_owner: Path `room_owner` is required.","method":"POST","timestamp":"2026-04-16 16:51:39"}
+=======
 {"ip":"::1","level":"error","message":"AUTH UPDATE ORG -- Cast to ObjectId failed for value \"Pambayang Dalubhasaan ng Marilao\" (type string) at path \"user_organization\" because of \"BSONError\" with status code (500)","method":"PATCH","timestamp":"2026-04-15 23:42:54"}
 {"ip":"::1","level":"error","message":"AUTH UPDATE ORG -- Cast to ObjectId failed for value \"Pambayang Dalubhasaan ng Marilao\" (type string) at path \"user_organization\" because of \"BSONError\" with status code (500)","method":"PATCH","timestamp":"2026-04-15 23:43:01"}
 {"ip":"::1","level":"error","message":"AUTH UPDATE ORG -- Cast to ObjectId failed for value \"Pambayang Dalubhasaan ng Marilao\" (type string) at path \"user_organization\" because of \"BSONError\" with status code (500)","method":"PATCH","timestamp":"2026-04-15 23:43:12"}
 {"ip":"::1","level":"error","message":"AUTH UPDATE ORG -- Cast to ObjectId failed for value \"Pambayang Dalubhasaan ng Marilao\" (type string) at path \"user_organization\" because of \"BSONError\" with status code (500)","method":"PATCH","timestamp":"2026-04-15 23:43:22"}
 {"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-04-15 23:46:17"}
 {"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-04-16 10:22:56"}
+>>>>>>> 20986dcc8e2d0ff6420fac9b350da7fcd3a81dcd

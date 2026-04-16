@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import UnderConstruction from "@/assets/images/under_construction.png";
 import { getPendingApplications, approveApplication, rejectApplication, getNotifications } from "@/shared/services/organization";
+import { getPendingClassroomRequests, approveClassroomRequest, rejectClassroomRequest } from "@/shared/services/classroomRequestService";
 import { useAuth } from "@/context/authContext";
 import { toast } from "sonner";
 import Popover from "@mui/material/Popover";
@@ -21,18 +22,21 @@ export default function NotificationPage() {
   const [isProcessing, setIsProcessing] = useState(false);
 
   const buttons = ["Today", "Earlier", "This Week"];
+  const [classroomRequests, setClassroomRequests] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true);
         if (user?.user_organization) {
-          const [appsData, notifsData] = await Promise.all([
+          const [appsData, notifsData, classroomReqsData] = await Promise.all([
             getPendingApplications(),
             getNotifications(),
+            user?.is_admin ? getPendingClassroomRequests() : Promise.resolve({ requests: [] }),
           ]);
           setApplications(appsData.applications || []);
           setNotifications(notifsData.notifications || []);
+          setClassroomRequests(classroomReqsData.requests || []);
           setError(null);
         }
       } catch (err) {
@@ -96,6 +100,13 @@ export default function NotificationPage() {
         type: "application",
         dateField: app.applied_at,
       })));
+      
+      // Include classroom requests if user is admin
+      allItems.push(...classroomRequests.map((req) => ({
+        ...req,
+        type: "classroom_request",
+        dateField: req.created_at,
+      })));
     }
     
     allItems.push(...notifications.map((notif) => ({
@@ -130,25 +141,46 @@ export default function NotificationPage() {
     if (!selectedApp?._id) return;
     try {
       setIsProcessing(true);
-      if (actionType === "approve") {
-        await approveApplication(selectedApp._id);
-        toast.success(`${selectedApp.first_name} ${selectedApp.last_name} has been approved!`);
+      
+      if (selectedApp.type === "classroom_request") {
+        // Handle classroom request
+        if (actionType === "approve") {
+          await approveClassroomRequest(selectedApp._id);
+          toast.success(`Classroom request for "${selectedApp.classroom_name}" has been approved!`);
+        } else {
+          await rejectClassroomRequest(selectedApp._id);
+          toast.success(`Classroom request for "${selectedApp.classroom_name}" has been rejected.`);
+        }
       } else {
-        await rejectApplication(selectedApp._id);
-        toast.success(`${selectedApp.first_name} ${selectedApp.last_name} has been rejected.`);
+        // Handle application
+        if (actionType === "approve") {
+          await approveApplication(selectedApp._id);
+          toast.success(`${selectedApp.first_name} ${selectedApp.last_name} has been approved!`);
+        } else {
+          await rejectApplication(selectedApp._id);
+          toast.success(`${selectedApp.first_name} ${selectedApp.last_name} has been rejected.`);
+        }
       }
 
-      // Refresh both applications and notifications
-      const [appsData, notifsData] = await Promise.all([
+      // Refresh all data
+      const refreshPromises = [
         getPendingApplications(),
         getNotifications(),
-      ]);
+      ];
+      if (user?.is_admin) {
+        refreshPromises.push(getPendingClassroomRequests());
+      }
+      
+      const [appsData, notifsData, classroomReqsData] = await Promise.all(refreshPromises);
       setApplications(appsData.applications || []);
       setNotifications(notifsData.notifications || []);
+      if (classroomReqsData?.requests) {
+        setClassroomRequests(classroomReqsData.requests);
+      }
       handleClose();
     } catch (err) {
-      console.error("Error processing application:", err);
-      toast.error("Failed to process application");
+      console.error("Error processing action:", err);
+      toast.error("Failed to process request");
     } finally {
       setIsProcessing(false);
     }
@@ -211,6 +243,8 @@ export default function NotificationPage() {
                       <span className="text-base">
                         {item.type === "application"
                           ? `${item.first_name} ${item.last_name} applied to your organization`
+                          : item.type === "classroom_request"
+                          ? `${item.requested_by_name} is requesting to add a classroom: "${item.classroom_name}"`
                           : item.message}
                       </span>
                     </div>
@@ -218,19 +252,19 @@ export default function NotificationPage() {
                       {formatDate(item.dateField)}
                     </span>
                     <div className="flex items-center gap-2 w-24 justify-end">
-                      {item.type === "application" && (
+                      {(item.type === "application" || item.type === "classroom_request") && (
                         <>
                           <button
                             onClick={(e) => handleActionClick(e, item, "approve")}
                             className="p-1 hover:bg-[#A7A7A3] rounded transition-colors"
-                            title="Approve application"
+                            title="Approve"
                           >
                             <img src={Accept} alt="Accept" className="w-8 h-8" />
                           </button>
                           <button
                             onClick={(e) => handleActionClick(e, item, "reject")}
                             className="p-1 hover:bg-[#A7A7A3] rounded transition-colors"
-                            title="Reject application"
+                            title="Reject"
                           >
                             <img src={Reject} alt="Reject" className="w-8 h-8" />
                           </button>
@@ -270,10 +304,14 @@ export default function NotificationPage() {
       >
         <div className="w-96 rounded-lg flex flex-col gap-4 p-5 bg-[#DFDEDA]">
           <h2 className="text-lg font-semibold text-[#4F4F4F]">
-            {actionType === "approve" ? "Approve Application" : "Reject Application"}
+            {actionType === "approve" ? "Approve Request" : "Reject Request"}
           </h2>
           <p className="text-base text-[#4F4F4F]">
-            {actionType === "approve"
+            {selectedApp?.type === "classroom_request"
+              ? actionType === "approve"
+                ? `Are you sure you want to approve the classroom request "${selectedApp?.classroom_name}" from ${selectedApp?.requested_by_name}?`
+                : `Are you sure you want to reject the classroom request "${selectedApp?.classroom_name}" from ${selectedApp?.requested_by_name}?`
+              : actionType === "approve"
               ? `Are you sure you want to approve ${selectedApp?.first_name} ${selectedApp?.last_name}?`
               : `Are you sure you want to reject ${selectedApp?.first_name} ${selectedApp?.last_name}?`}
           </p>

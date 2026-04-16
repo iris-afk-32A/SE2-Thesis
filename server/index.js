@@ -14,7 +14,6 @@ const { initSocket } = require("./config/socket");
 const server = http.createServer(app);
 initSocket(server);
 
-server.listen(4000, () => console.log("Server running"));
 // !So i added rateLimiter specifically for authentication as of now, but ill add
 // !rate limiter on other request to especially ones that needs database request 
 const requestLimiter = rateLimit({
@@ -43,6 +42,8 @@ const SubjectRouter = require("./Routes/subject");
 const ScheduleRouter = require("./Routes/schedule");
 const ActivityRouter = require("./Routes/activity");
 const ArduinoRouter = require("./Routes/arduino");
+const ForgotPasswordRouter = require("./Routes/forgotPassword");
+const ClassroomRequestRouter = require("./Routes/classroom_request");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -67,6 +68,7 @@ app.use("/points", PointRouter);
 app.use("/room/add", requestLimiter);
 app.use("/device", DeviceRouter);
 app.use("/organization", OrganizationRouter);
+app.use("/classroom-request", ClassroomRequestRouter);
 app.use("/organization/addOrganization", requestLimiter);
 app.use("/organization/getOrganization", requestLimiter);
 app.use("/subject/create", requestLimiter);
@@ -74,6 +76,11 @@ app.use("/subject/list", requestLimiter);
 app.use("/subject", SubjectRouter);
 app.use("/schedule", ScheduleRouter);
 app.use("/schedule/room/:roomId", requestLimiter);
+
+app.use("/auth/forgot-password/send-otp", requestLimiter);
+app.use("/auth/forgot-password/verify-otp", requestLimiter);
+app.use("/auth/forgot-password/reset-password", requestLimiter);
+app.use("/auth/forgot-password", ForgotPasswordRouter);
 
 app.use("/control", ArduinoRouter);
 
@@ -92,7 +99,7 @@ app.get("/health", (req, res) => {
   res.status(200).send("Server is healthy");
 });
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
   logger.info(`SERVER -- Server started runnin on port: ${port}`);
 });

@@ -8,6 +8,7 @@ import { useActivity } from "../../context/activityContext.jsx";
 import { useAuth } from "../../context/authContext.jsx";
 import { toast } from "sonner";
 import { addRoom } from "../../shared/services/roomService.js";
+import { createClassroomRequest } from "../../shared/services/classroomRequestService.js";
 import { useNavigate } from "react-router-dom";
 import { useRooms } from "../../context/roomContext.jsx";
 import KebabPullout from "../../shared/components/ui/kebabPullout.jsx";
@@ -161,12 +162,22 @@ export default function ClassroomPage() {
 
   const onSubmit = async (data) => {
     try {
+      // If user is not admin, create a request instead
+      if (!user?.is_admin) {
+        await createClassroomRequest(data.cr_name);
+        toast.info("Your classroom request has been sent to administrators for approval", { });
+        setAnchorEl(null);
+        return;
+      }
+      
+      // Admin can add directly
       const res = await addRoom({ room_name: data.cr_name });
       addActivity(data.cr_name, "created");
       toast.success(res.message);
+      setAnchorEl(null);
     } catch (error) {
       if (handleServerDown(error, setIsServerUp, navigate)) return;
-      toast.error(error.response?.data?.message);
+      toast.error(error.response?.data?.message || "Failed to create classroom");
     }
   };
 
