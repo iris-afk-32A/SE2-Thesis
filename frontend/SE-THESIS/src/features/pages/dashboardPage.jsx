@@ -40,10 +40,8 @@ export default function dashboard() {
   const recentActivities = filteredActivities.slice(0, 5);
 
   useEffect(() => {
-    setEmptyRooms(rooms.filter((room) => (room.people_count ?? 0) > 0).length);
-    setVacantRoom(
-      rooms.filter((room) => (room.people_count ?? 0) === 0).length,
-    );
+    setEmptyRooms(rooms.filter((room) => (room.people_count ?? 0) >= 1).length);
+    setVacantRoom(rooms.filter((room) => (room.people_count ?? 0) < 1).length);
   }, [rooms]);
 
   const renderActivityMessage = (activity) => {
@@ -155,11 +153,11 @@ export default function dashboard() {
             continue;
           }
 
-          console.log(
-            "INITIALIZING CAMERA:",
-            room.room_name,
-            matchedCamera.label,
-          );
+          // console.log(
+          //   "INITIALIZING CAMERA:",
+          //   room.room_name,
+          //   matchedCamera.label,
+          // );
 
           await startCamera(room._id, matchedCamera.deviceId);
           startFrameCapture(room._id);
@@ -188,7 +186,7 @@ export default function dashboard() {
         );
 
         setAvailableCameras(videoInputs);
-        console.log("AVAILABLE CAMERAS:", videoInputs);
+        // console.log("AVAILABLE CAMERAS:", videoInputs);
       } catch (err) {
         console.error("Error loading available cameras:", err);
       }
@@ -293,7 +291,32 @@ export default function dashboard() {
           <h1 className="text-title primary-text font-bold">
             Classroom Status
           </h1>
-          <div className="w-full h-full rounded-2xl shadow-outside-dropshadow"></div>
+          <div className="w-full h-full min-h-0 rounded-2xl p-4 shadow-outside-dropshadow">
+            <div className="w-full h-full rounded-xl flex flex-col shadow-inside-dropshadow-small p-2 justify-center text-white font-bold text-2xl">
+              <div className="w-full border-b-2 border-gray-500/20 p-2 primary-text grid grid-cols-4 text-center">
+                <h2>Room</h2>
+                <h2>Status</h2>
+                <h2>Devices</h2>
+                <h2>Next Schedule</h2>
+              </div>
+
+              <div className="w-full h-full">
+                {rooms.map((room) => (
+                  <div
+                    key={room._id}
+                    className="w-full border-b border-gray-500/20 p-2 primary-text font-light grid grid-cols-4 text-center"
+                  >
+                    <p>{room.room_name}</p>
+                    <p>
+                      {(room.people_count ?? 0) >= 1 ? "Occupied" : "Vacant"}
+                    </p>
+                    <p>{(room.people_count ?? 0) >= 1 ? "On" : "Off"}</p>
+                    <p>None</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
