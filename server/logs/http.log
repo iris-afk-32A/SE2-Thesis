@@ -5450,3 +5450,501 @@
 {"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e048048f2b17f239baeae5'),\n  room_name: 'Room 12',\n  room_owner: {\n    _id: new ObjectId('69de6269a7f63ab585e92952'),\n    first_name: 'Triztan Dale'\n  },\n  room_occupants: 1,\n  room_organization: '69e047f58f2b17f239baead5',\n  room_specification: 'First floor',\n  __v: 0\n}","timestamp":"2026-04-16 22:59:58"}
 {"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69e048048f2b17f239baeae5: With status code 201","method":"POST","timestamp":"2026-04-16 23:00:43"}
 {"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-16 23:02:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:49:59"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 22:50:01"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 22:50:01"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e2329f43235716109dda64'),\n  room_name: 'Bompanes',\n  room_owner: { _id: new ObjectId('69df939b1743471ef390ae18'), first_name: 'Jack' },\n  room_occupants: 0.7,\n  room_organization: '69de6294a7f63ab585e9295b',\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-17 22:50:01"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 22:50:01"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 22:50:02"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-17 22:50:11"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 22:50:12"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e2329f43235716109dda64'),\n  room_name: 'Bompanes',\n  room_owner: { _id: new ObjectId('69df939b1743471ef390ae18'), first_name: 'Jack' },\n  room_occupants: 0.7,\n  room_organization: '69de6294a7f63ab585e9295b',\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-17 22:50:12"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 22:50:12"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 22:50:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:51:20"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:51:28"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:51:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:51:46"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 22:51:49"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 22:51:50"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e2329f43235716109dda64'),\n  room_name: 'Bompanes',\n  room_owner: { _id: new ObjectId('69df939b1743471ef390ae18'), first_name: 'Jack' },\n  room_occupants: 0.7,\n  room_organization: '69de6294a7f63ab585e9295b',\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-17 22:51:50"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 22:51:51"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 22:51:52"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:52:14"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:52:27"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:52:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:52:37"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:52:38"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:04"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:07"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:47"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:53:59"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:54:13"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:54:15"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:54:17"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:54:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:54:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:54:56"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:55:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:55:07"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:55:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:55:33"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:55:41"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 22:55:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:00:15"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:00:38"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:01:12"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:01:12"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:01:12"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:01:13"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:01:13"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room: With status code 201","method":"POST","timestamp":"2026-04-17 23:01:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:02:32"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:03:31"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:03:35"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:03:35"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:03:35"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:03:35"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:03:35"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:03:39"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:03:39"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:03:40"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:03:40"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:03:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:03:47"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:03:48"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:03:48"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:03:48"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:03:48"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:03:49"}
+{"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-04-17 23:03:54"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-04-17 23:04:06"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-17 23:04:10"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:04:10"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:04:10"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:04:10"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:04:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:04:37"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:04:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:04:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:04:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:04:55"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:04:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:05:17"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:05:21"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:05:23"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room: With status code 201","method":"POST","timestamp":"2026-04-17 23:05:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:06:34"}
+{"ip":"::ffff:127.0.0.1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:06:48"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:06:48"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:06:48"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:06:48"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:06:48"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:07:14"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:07:17"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:07:18"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:07:18"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:07:18"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:07:18"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:07:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:07:52"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:07:58"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:08:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:08:04"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:08:10"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:08:10"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:08:12"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:08:12"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:08:12"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:08:12"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:08:12"}
+{"ip":"::ffff:127.0.0.1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:08:17"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:08:17"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:08:17"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:08:17"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:08:17"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-17 23:08:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:08:26"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:08:26"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:08:26"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:08:26"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:08:53"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:08:58"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:09:00"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:09:01"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:09:01"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:09:01"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:09:01"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:09:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:11:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:11:47"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:11:49"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:11:49"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:11:49"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:11:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:12:30"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:12:32"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:12:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:12:44"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:12:48"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:12:48"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:12:48"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:12:48"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:12:50"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:12:50"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:12:50"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:12:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:13:59"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:14:32"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:14:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:14:48"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:14:55"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:14:59"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:15:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:16:22"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:16:24"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:16:24"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:16:24"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:16:24"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:16:24"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:16:31"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:16:31"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:16:31"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:16:31"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:16:31"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:16:42"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:16:43"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:16:43"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:16:43"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:16:43"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:16:43"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:16:48"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 2 notifications for organization: 69de6294a7f63ab585e9295b","method":"GET","timestamp":"2026-04-17 23:16:48"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 3 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:16:50"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBER REMOVED -- Triztan Dale Verzosa removed from organization","method":"POST","timestamp":"2026-04-17 23:16:52"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Stardust Crusader","method":"GET","timestamp":"2026-04-17 23:16:52"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:17:56"}
+{"ip":"::1","level":"info","message":"ORGANIZATION CREATE -- Organization added Maevis: With status code 201","method":"POST","timestamp":"2026-04-17 23:18:10"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:18:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:18:14"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:18:14"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:18:14"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:18:14"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:18:14"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:18:14"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-17 23:18:37"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:19:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:19:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:19:47"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:19:51"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:20:16"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:20:16"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:20:17"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:20:17"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:20:17"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:20:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:20:56"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:20:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:21:02"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-17 23:21:03"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:21:44"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:21:44"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:21:44"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-17 23:21:44"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:21:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:22:55"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:22:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:22:58"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:23:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:23:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:23:32"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:23:39"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:23:39"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- rooms is not defined","method":"GET","timestamp":"2026-04-17 23:23:39"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:23:39"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:23:39"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:24:08"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:24:11"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:24:11"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:24:11"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:24:11"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- rooms is not defined","method":"GET","timestamp":"2026-04-17 23:24:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:24:45"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:24:47"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:24:47"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e24fdf6fd475b7a0e9ae15'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-17 23:24:47"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:24:47"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:24:47"}
+{"ip":"::1","level":"error","message":"ROOM DELETE -- Unauthorized deletion attempt by user 69de6269a7f63ab585e92952","method":"DELETE","timestamp":"2026-04-17 23:24:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:25:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:25:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:25:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:25:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:25:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:26:00"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:26:11"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:26:27"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:26:32"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:26:38"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:26:57"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-17 23:26:59"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-17 23:27:08"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-17 23:27:15"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69e2514c880ab7cee81679c9: With status code 201","method":"POST","timestamp":"2026-04-17 23:27:57"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-17 23:32:02"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-17 23:32:06"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:34:21"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:34:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:35:01"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:35:08"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:35:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:35:21"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:35:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:35:58"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:36:04"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:36:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:54:00"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:54:03"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:54:07"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:54:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:54:47"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:54:47"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-17 23:54:47"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:54:47"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:54:47"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:55:04"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:55:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:55:59"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:56:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:56:19"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:56:24"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:56:26"}
+{"ip":"::1","level":"error","message":"DEVICE ADD -- User is not defined","method":"POST","timestamp":"2026-04-17 23:56:27"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:56:42"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:57:06"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:57:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:57:41"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:57:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-17 23:58:40"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-17 23:59:50"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-17 23:59:51"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-17 23:59:51"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-17 23:59:51"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-17 23:59:51"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-18 00:00:07"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-18 00:00:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-18 00:00:15"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:00:23"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:00:24"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:00:24"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:00:24"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:00:24"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:00:25"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:00:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:00:26"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:00:26"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:00:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:00:38"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:00:38"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:00:39"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:00:39"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:00:39"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:00:40"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:00:40"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:00:40"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:00:41"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:00:41"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:00:50"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:00:50"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:00:50"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:00:50"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:00:50"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:00:52"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:00:52"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:00:53"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:00:53"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:00:53"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:00:55"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:00:55"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:00:55"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:00:55"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:00:55"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:01:00"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:01:00"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:01:00"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:01:00"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:01:00"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:01:01"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:01:02"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:01:02"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:01:02"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:01:02"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:02:24"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:02:31"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:02:31"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:02:31"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:02:31"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:02:31"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:03:53"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:03:53"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25276880ab7cee8167aa7'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 1.5999999999999999,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:03:54"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:03:54"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:03:54"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-18 00:04:04"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:04:09"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:04:09"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-18 00:04:09"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:04:09"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:04:09"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:04:12"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:04:12"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-18 00:04:12"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:04:12"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:04:12"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-18 00:04:16"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:04:22"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:04:33"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:04:33"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25a0057fd6d8551fcd3c5'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:04:33"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:04:34"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:04:34"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-18 00:04:41"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-18 00:04:44"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:04:48"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-18 00:05:01"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-18 00:05:07"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:05:17"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-18 00:05:28"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Karina: With status code 201","method":"POST","timestamp":"2026-04-18 00:05:37"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:05:50"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:06:04"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:06:04"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25a5157fd6d8551fcd404'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:06:04"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:06:04"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:06:04"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:06:26"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:06:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25a5157fd6d8551fcd404'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:06:26"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:06:26"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:06:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:06:28"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:06:28"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25a5157fd6d8551fcd404'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:06:28"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:06:28"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:06:28"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-04-18 00:07:10"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-18 00:07:14"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:07:14"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-18 00:07:15"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:07:15"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:07:15"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-18 00:07:24"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:07:28"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-18 00:10:49"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:10:53"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:10:53"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-18 00:10:53"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:10:53"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:10:53"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Ningning: With status code 201","method":"POST","timestamp":"2026-04-18 00:10:57"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:11:01"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:12:25"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:12:25"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:12:25"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:12:25"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:12:25"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:12:26"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:12:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:12:26"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:12:26"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:12:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:12:30"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:12:30"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:12:30"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:12:30"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:12:30"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:12:33"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:12:33"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:12:34"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:12:34"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:12:34"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:12:36"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:12:36"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:12:36"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:12:36"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:12:36"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:21:25"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:21:25"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:21:26"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:21:26"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:21:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:21:41"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:21:41"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:21:41"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:21:41"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:21:41"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:21:42"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:21:42"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25b9157fd6d8551fcd4ca'),\n  room_name: 'Ningning',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:21:42"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:21:42"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:21:43"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Ningning","method":"DELETE","timestamp":"2026-04-18 00:21:59"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:22:01"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:22:01"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-18 00:22:01"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:22:01"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:22:02"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-18 00:22:06"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:22:10"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69e25e2e57fd6d8551fcd53e: With status code 201","method":"POST","timestamp":"2026-04-18 00:22:22"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:26:13"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:26:13"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25e2e57fd6d8551fcd53e'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:26:13"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:26:13"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:26:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:28:14"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:28:14"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25e2e57fd6d8551fcd53e'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 1.2999999999999996,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:28:14"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:28:14"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:28:14"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:28:26"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:28:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25e2e57fd6d8551fcd53e'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 1.2999999999999996,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:28:26"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:28:26"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:28:26"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Winter","method":"DELETE","timestamp":"2026-04-18 00:28:30"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-18 00:28:33"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:28:36"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:28:47"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:28:48"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:28:48"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:28:48"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:28:48"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Karina: With status code 201","method":"POST","timestamp":"2026-04-18 00:29:08"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:29:13"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added NingNing: With status code 201","method":"POST","timestamp":"2026-04-18 00:29:19"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:29:23"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Giselle: With status code 201","method":"POST","timestamp":"2026-04-18 00:29:30"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-18 00:29:34"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:29:44"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:29:44"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:29:44"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:29:44"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:29:44"}
+{"ip":"::1","level":"info","message":"ACTIVITY FETCHED -- Activities for room 69e25fb157fd6d8551fcd6c6 fetched successfully","method":"GET","timestamp":"2026-04-18 00:31:45"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:43:18"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:43:18"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:43:19"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:43:19"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:43:19"}
+{"ip":"::1","level":"info","message":"ACTIVITY FETCHED -- Activities for room 69e25fb157fd6d8551fcd6c6 fetched successfully","method":"GET","timestamp":"2026-04-18 00:43:24"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-18 00:43:26"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-18 00:43:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 00:43:26"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 1 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 00:43:26"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 0 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 00:43:26"}
+{"ip":"::1","level":"info","message":"ACTIVITY FETCHED -- Activities for room 69e25fb157fd6d8551fcd6c6 fetched successfully","method":"GET","timestamp":"2026-04-18 00:43:26"}

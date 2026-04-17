@@ -6,11 +6,6 @@ const cameraDeviceSchema = mongoose.Schema({
         ref: 'Room',
         required: true
     },
-    device_owner: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true
-    },
     is_active: {
         type: Boolean,
         default: false

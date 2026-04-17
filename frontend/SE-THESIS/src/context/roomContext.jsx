@@ -91,6 +91,7 @@ export const RoomProvider = ({ children }) => {
     return () => {
       socket.off("roomAdded", handleNewRoom);
       socket.off("roomDeleted", handleRoomDeleted);
+      socket.off("roomUpdated", handleRoomUpdated);
     };
   }, []);
 

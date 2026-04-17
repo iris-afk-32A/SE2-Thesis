@@ -1,5 +1,6 @@
 // frontend/SE-THESIS/src/context/cameraContext.jsx
 import { createContext, useContext, useRef, useEffect } from "react";
+import { socket } from "../shared/services/socketService";
 import { detectFrame } from "../shared/services/roomService.js";
 import { getROIPoints } from "../shared/services/pointService.js";
 
@@ -12,14 +13,7 @@ export const CameraProvider = ({ children }) => {
   const streamsRef = useRef({});
   const captureIntervalsRef = useRef({});
   const captureResourcesRef = useRef({});
-
-  useEffect(() => {
-    // startCamera();
-    // startFrameCapture();
-    getROIPoints();
-    initializeRoomCamera();
-  }, []);
-
+  
   //! Starts the camera for a specific room
   const startCamera = async (roomId, deviceId) => {
     try {
@@ -248,6 +242,7 @@ export const CameraProvider = ({ children }) => {
         console.error("Error playing hidden video for room:", roomId, err);
       });
   };
+
 
   return (
     <CameraContext.Provider
