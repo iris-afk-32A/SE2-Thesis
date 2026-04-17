@@ -106,12 +106,30 @@ export default function dashboard() {
   };
 
   useEffect(() => {
+    console.log("Setting up socket listeners. Current state:", {
+      socketId: socket.id,
+      connected: socket.connected,
+      url: import.meta.env.VITE_SERVER_URL,
+    });
+
     const handleConnect = () => console.log("Socket connected!", socket.id);
+    const handleError = (error) => console.error("Socket error:", error);
+    const handleDisconnect = (reason) =>
+      console.log("Socket disconnected:", reason);
 
     socket.on("connect", handleConnect);
+    socket.on("disconnect", handleDisconnect);
+    socket.on("connect_error", handleError);
+
+    // If already connected, log immediately
+    if (socket.connected) {
+      console.log("Socket already connected:", socket.id);
+    }
 
     return () => {
       socket.off("connect", handleConnect);
+      socket.off("disconnect", handleDisconnect);
+      socket.off("connect_error", handleError);
     };
   }, []);
 

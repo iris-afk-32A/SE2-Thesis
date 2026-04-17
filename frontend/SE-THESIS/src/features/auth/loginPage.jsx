@@ -12,7 +12,7 @@ import { socket } from "../../shared/services/socketService.js";
 import { useRooms } from "../../context/roomContext.jsx";
 // !Services
 import { validateUserEmail } from "../../shared/services/authService.js";
-// import { sendOTP, verifyOTP, resetPassword } from "../../shared/services/passwordResetService.js";
+import { sendOTP, verifyOTP, resetPassword } from "../../shared/services/forgotPasswordService.js";
 // !Assets
 import { CircleAlert } from "lucide-react";
 import { toast } from "sonner";
@@ -106,23 +106,30 @@ export default function LoginPage() {
 
     try {
       setIsSubmittingForgotPassword(true);
+      console.log(`[handleForgotPasswordSubmit] Starting forgot password flow for: ${forgotPasswordEmail}`);
       
       // First, validate that the email exists
       try {
+        console.log(`[handleForgotPasswordSubmit] Calling validateUserEmail...`);
         await validateUserEmail(forgotPasswordEmail);
+        console.log(`[handleForgotPasswordSubmit] Email validation passed!`);
       } catch (validationError) {
+        console.error(`[handleForgotPasswordSubmit] Email validation failed:`, validationError);
         toast.error("User with this email not found");
         setIsSubmittingForgotPassword(false);
         return;
       }
       
       // If email exists, send OTP
+      console.log(`[handleForgotPasswordSubmit] Now calling sendOTP...`);
       await sendOTP(forgotPasswordEmail);
+      console.log(`[handleForgotPasswordSubmit] sendOTP completed successfully!`);
       setForgotPasswordDialogOpen(false);
       setOtpDialogOpen(true);
       setOtpInput("");
       toast.success("OTP sent! Check your email.");
     } catch (error) {
+      console.error(`[handleForgotPasswordSubmit] Caught error:`, error);
       toast.error("Failed to send OTP. Please try again.");
     } finally {
       setIsSubmittingForgotPassword(false);
