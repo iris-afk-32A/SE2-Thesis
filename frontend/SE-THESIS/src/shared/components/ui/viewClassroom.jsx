@@ -6,13 +6,13 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Draggable from "react-draggable";
 import Small_Logo from "@/assets/images/small_logo.png";
-import { addCamera } from "../../services/deviceService";
 import { deleteRoom } from "../../services/roomService";
 import { handleServerDown } from "../../utils/serverDownHandler";
 import { useServerStatus } from "../../../context/serverStatusContext";
 import { useActivity } from "../../../context/activityContext";
 import { useDeviceState } from "../../../context/deviceStateContext";
 import { useNavigate } from "react-router-dom";
+import { addCamera, getDevice } from "../../services/deviceService";
 import { socket } from "../../services/socketService";
 import { Toaster } from "../../components/ui/sonner";
 import { useCamera } from "../../../context/cameraContext";
@@ -504,6 +504,7 @@ export default function ViewClassroom({
   roomName,
   onRoomDeleted,
 }) {
+  const [connectedDevice, setConnectedDevice] = useState(null);
   const navigate = useNavigate();
   const { isServerUp, setIsServerUp } = useServerStatus();
   const { addActivity } = useActivity();
@@ -516,8 +517,44 @@ export default function ViewClassroom({
   const [cameras, setCameras] = useState([]);
   const [openDevices, setOpenDevices] = useState(false);
   const streamRef = useRef(null);
-  const { getStream } = useCamera();
+  const { getStream, startCamera, startFrameCapture } = useCamera();
   const [selectedRoom, setSelectedRoom] = useState(null);
+
+  useEffect(() => {
+    async function loadConnectedDevice() {
+      if (!openDevices || !roomId) return;
+
+      try {
+        const devices = await getDevice(roomId);
+
+        if (devices.length > 0) {
+          setConnectedDevice(devices[0]);
+        } else {
+          setConnectedDevice(null);
+        }
+      } catch (error) {
+        console.error("Failed to load connected device:", error);
+        setConnectedDevice(null);
+      }
+    }
+
+    loadConnectedDevice();
+  }, [openDevices, roomId]);
+
+  useEffect(() => {
+    if (
+      connectedDevice &&
+      selectedCamera &&
+      selectedCamera.label === connectedDevice.device_label
+    ) {
+      setSelectedCamera(null);
+    }
+  }, [connectedDevice, selectedCamera]);
+
+  const availableDeviceOptions = cameras.filter((cam) => {
+    if (!connectedDevice) return true;
+    return cam.label !== connectedDevice.device_label;
+  });
 
   //! Load device states from context when modal opens
   //! Bali ito yung for electronic devices
@@ -562,21 +599,72 @@ export default function ViewClassroom({
   }, []);
 
   //! This updates the video feed whenever the selected camera changes or when the modal is opened
+  //! Restore and attach room stream when modal opens or page refreshes
   useEffect(() => {
-    if (!open || !roomId || !videoRef.current) return;
+    async function ensureRoomStream() {
+      if (!open || !roomId || !videoRef.current || !cameras.length) return;
 
-    const stream = getStream(roomId);
+      let stream = getStream(roomId);
 
-    videoRef.current.srcObject = null;
+      // After refresh, CameraContext memory is empty, so rebuild from saved device
+      if (!stream) {
+        try {
+          const devices = await getDevice(roomId);
 
-    if (stream) {
-      videoRef.current.srcObject = stream;
-      console.log("ATTACHED STREAM FOR ROOM:", roomId);
-    } else {
-      console.warn("No stream found for room:", roomId);
+          if (!devices.length) {
+            console.warn("No saved device found for room:", roomId);
+            videoRef.current.srcObject = null;
+            return;
+          }
+
+          const savedDevice = devices[0];
+
+          const matchedCamera = cameras.find(
+            (cam) => cam.label === savedDevice.device_label,
+          );
+
+          if (!matchedCamera) {
+            console.warn(
+              "No matching browser camera found for saved device:",
+              savedDevice.device_label,
+            );
+            videoRef.current.srcObject = null;
+            return;
+          }
+
+          await startCamera(roomId, matchedCamera.deviceId);
+          await startFrameCapture(roomId);
+
+          stream = getStream(roomId);
+        } catch (error) {
+          console.error("Failed to restore room stream:", error);
+          videoRef.current.srcObject = null;
+          return;
+        }
+      }
+
+      videoRef.current.srcObject = stream || null;
+
+      if (stream) {
+        console.log("ATTACHED STREAM FOR ROOM:", roomId);
+      } else {
+        console.warn("No stream found for room:", roomId);
+      }
     }
-    socket.on("deviceAdded", getStream);
-  }, [roomId, open, getStream]);
+
+    ensureRoomStream();
+
+    const handleDeviceAdded = async (data) => {
+      if (data.device_location !== roomId) return;
+      await ensureRoomStream();
+    };
+
+    socket.on("deviceAdded", handleDeviceAdded);
+
+    return () => {
+      socket.off("deviceAdded", handleDeviceAdded);
+    };
+  }, [open, roomId, cameras, getStream, startCamera, startFrameCapture]);
 
   //! This handles the camera stream whenever a new camera is selected
   useEffect(() => {
@@ -615,17 +703,31 @@ export default function ViewClassroom({
   }, [selectedCamera]);
 
   //! This handles adding the camera to the classroom in the database
-  const handleAddCamera = async (data) => {
+  const handleAddCamera = async () => {
     try {
+      if (!selectedCamera) {
+        toast.error("Please select a camera first");
+        return;
+      }
+
       const res = await addCamera({
         device_location: roomId,
         device_type: "Camera",
         device_label: selectedCamera.label,
       });
+
+      await startCamera(roomId, selectedCamera.deviceId);
+      await startFrameCapture(roomId);
+
+      const stream = getStream(roomId);
+      if (videoRef.current && stream) {
+        videoRef.current.srcObject = stream;
+      }
+
       toast.success(res.message);
+      setOpenDevices(false);
     } catch (error) {
       if (handleServerDown(error, setIsServerUp, navigate)) return;
-      // ?If it's not, then the status error message will be displayed
       toast.error(error.response?.data?.message || "Something failed");
     }
   };
@@ -681,7 +783,7 @@ export default function ViewClassroom({
       room_id: roomId,
       activity_message: `${roomName} fans ${newState ? "turned on" : "turned off"}`,
     });
-    
+
     toast.success(newState ? "Lights turned on" : "Lights turned off");
   };
 
@@ -894,32 +996,63 @@ export default function ViewClassroom({
               </button>
               <h1 className="text-title">Sensors</h1>
             </div>
-            <ToggleSwitch sx={{ m: 1 }} />
           </div>
-          <div className="w-full border-b border-[#C8C8C8] h-fit px-5 py-3 flex flex-col">
+          <div className="w-full border-b border-[#C8C8C8] h-fit px-5 py-3 flex flex-col gap-3">
             <h2 className="text-title font-medium">Connected Device</h2>
+
+            {connectedDevice ? (
+              <div className="flex items-center gap-3 rounded-xl bg-[#d7d6d2] px-4 py-3 border border-[#C8C8C8]">
+                <img
+                  src={Small_Logo}
+                  alt="connected cam"
+                  className="w-10 aspect-auto"
+                />
+                <div className="flex flex-col">
+                  <p className="text-subtitle font-medium">
+                    {connectedDevice.device_label || "Unknown Camera"}
+                  </p>
+                  <p className="text-sm text-[#666]">
+                    Connected to this classroom
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <p className="text-[#777] text-subtitle">
+                No connected device yet
+              </p>
+            )}
           </div>
           <div className="w-full h-fit px-5 py-3 flex flex-col">
             <h2 className="text-title font-medium">Available Devices</h2>
           </div>
           <div className="w-full h-full flex flex-col  overflow-y-scroll px-10 py-5">
             <ul className="flex flex-col gap-5">
-              {cameras.map((cam) => (
-                <div
-                  key={cam.deviceId}
-                  className="flex items-center gap-2 text-subtitle cursor-pointer"
-                  onClick={() => {
-                    setSelectedCamera(cam);
-                  }}
-                >
-                  <img
-                    src={Small_Logo}
-                    alt="cam"
-                    className="w-10 aspect-auto"
-                  />
-                  <li>{cam.label || "Unknown Camera"}</li>
-                </div>
-              ))}
+              {availableDeviceOptions.length > 0 ? (
+                availableDeviceOptions.map((cam) => (
+                  <div
+                    key={cam.deviceId}
+                    className={`flex items-center gap-2 text-subtitle cursor-pointer rounded-xl px-4 py-3 transition-all duration-200 border ${
+                      selectedCamera?.deviceId === cam.deviceId
+                        ? "bg-[#bfc0c3] border-[#4F4F4F] shadow-md scale-[1.01]"
+                        : "hover:bg-[#d7d6d2] border-transparent"
+                    }`}
+                    onClick={() => {
+                      setSelectedCamera(cam);
+                    }}
+                  >
+                    <img
+                      src={Small_Logo}
+                      alt="cam"
+                      className="w-10 aspect-auto"
+                    />
+                    <li>{cam.label || "Unknown Camera"}</li>
+                  </div>
+                ))
+              ) : (
+                <p className="text-[#777] text-subtitle">
+                  No available devices
+                </p>
+              )}
             </ul>
           </div>
           <button

@@ -134,8 +134,8 @@ export default function dashboard() {
   }, []);
 
   useEffect(() => {
-    const handleDeviceAdded = async ({ roomId }) => {
-      await initializeRoomCamera(roomId, rooms, availableCameras);
+    const handleDeviceAdded = async ({ device_location }) => {
+      await initializeRoomCamera(device_location, rooms, availableCameras);
     };
 
     socket.on("deviceAdded", handleDeviceAdded);
@@ -153,10 +153,7 @@ export default function dashboard() {
         for (const room of rooms) {
           const devices = await getDevice(room._id);
 
-          if (!devices.length) {
-            console.log("No saved device for room:", room.room_name);
-            continue;
-          }
+          if (!devices.length) continue;
 
           const savedDevice = devices[0];
 
@@ -164,20 +161,7 @@ export default function dashboard() {
             (cam) => cam.label === savedDevice.device_label,
           );
 
-          if (!matchedCamera) {
-            console.warn(
-              "No matching browser camera for room:",
-              room.room_name,
-              savedDevice.device_label,
-            );
-            continue;
-          }
-
-          console.log(
-            "INITIALIZING CAMERA:",
-            room.room_name,
-            matchedCamera.label,
-          );
+          if (!matchedCamera) continue;
 
           await startCamera(room._id, matchedCamera.deviceId);
           startFrameCapture(room._id);
@@ -189,7 +173,11 @@ export default function dashboard() {
 
     socket.on("deviceAdded", initializeAllRoomCameras);
     initializeAllRoomCameras();
-  }, [rooms, availableCameras]);
+
+    return () => {
+      socket.off("deviceAdded", initializeAllRoomCameras);
+    };
+  }, [rooms, availableCameras, startCamera, startFrameCapture]);
 
   useEffect(() => {
     async function loadAvailableCameras() {

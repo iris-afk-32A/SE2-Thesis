@@ -2,12 +2,17 @@ require("dotenv").config();
 const logger = require("../utils/logger");
 const { getIO } = require("../config/socket");
 const Device = require("../models/device_model");
+const User = require("../models/user_model");
 
 exports.addDevice = async (req, res, next) => {
+  console.log("------------------------ CAMERA ADDING -----------------------");
   try {
     const io = getIO();
+    const user = await User.findById(req.userID);
     const { device_location, device_type, device_label } = req.body;
-    const userID = req.userID;
+
+    console.log("USER:", user);  
+    console.log("DATA RECEIVED:", req.body);
 
     const existingDevice = await Device.exists({
       device_location: device_location,
@@ -20,11 +25,13 @@ exports.addDevice = async (req, res, next) => {
     }
 
     const device = new Device({
-      device_owner: req.userID,
       device_location,
       device_type,
       device_label,
     });
+
+    
+    await device.save();
 
     io.emit("deviceAdded", {
       _id: device._id,
@@ -32,13 +39,14 @@ exports.addDevice = async (req, res, next) => {
       device_type,
       device_label,
     });
-
-    await device.save();
+    
     logger.info({
       message: `DEVICE CREATE -- Device added ${req.body.device_label}: With status code 201`,
       method: req.method,
       ip: req.ip,
     });
+
+    console.log("------------------------------------------------------------");
 
     return res.status(201).json({
       message: "Device Added",

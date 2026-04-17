@@ -6,6 +6,7 @@ frontend/.env
 server/node_modules/
 server/.env
 server/logs/
+backend/results
 
 # Ignore Python cache files
 backend/venv

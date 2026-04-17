@@ -7,20 +7,28 @@ const logger = require("../utils/logger");
 // TODO: Add comments (tinatamad na ko man sub na) ┐ ( -“-) ┌
 
 exports.addRoom = async (req, res, next) => {
+  console.log("------------------------ ROOM ADDING -----------------------");
   try {
     const io = getIO();
     const { room_name } = req.body;
     const user = await User.findById(req.userID);
+    const org = await User.findById(req.userID)
+      .select("user_organization")
+      .populate("user_organization", "org_name");
+
+    console.log("ORGANIZATION:", org.user_organization);
 
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
 
     if (!user.user_organization) {
-      return res.status(400).json({ message: "User is not part of any organization" });
+      return res
+        .status(400)
+        .json({ message: "User is not part of any organization" });
     }
 
-    const existingRoom = await Room.findOne({ room_name, room_owner: req.userID })
+    const existingRoom = await Room.findOne({ room_name, room_owner: org._id });
     if (existingRoom) {
       logger.error({
         message: `ROOM CREATE -- Attempted to create a room with an existing name`,
@@ -34,8 +42,7 @@ exports.addRoom = async (req, res, next) => {
 
     const room = new Room({
       room_name,
-      room_owner: req.userID,
-      room_organization: user.user_organization,
+      room_owner: org.user_organization,
     });
 
     await room.save();
@@ -47,6 +54,8 @@ exports.addRoom = async (req, res, next) => {
 
     const populatedRoom = await room.populate("room_owner", "first_name email");
     io.emit("roomAdded", populatedRoom);
+
+    console.log("------------------------------------------------------------");
 
     res.status(201).json({
       message: "Room added successfully",
@@ -65,6 +74,11 @@ exports.addRoom = async (req, res, next) => {
 exports.getRooms = async (req, res, next) => {
   try {
     const user = await User.findById(req.userID);
+    console.log(
+      "------------------------ ROOM FETCHING -----------------------",
+    );
+
+    console.log("USER:", user.user_organization);
 
     if (!user) {
       return res.status(404).json({ message: "User not found" });
@@ -74,14 +88,19 @@ exports.getRooms = async (req, res, next) => {
       return res.status(200).json([]);
     }
 
-    const rooms = await Room.find({
-      room_organization: user.user_organization,
-    }).populate("room_owner", "first_name");
-    logger.info({
-      message: `ROOMS FETCHED -- ${rooms}`
-    })
+    const room = await Room.find({
+      room_owner: user.user_organization,
+    }).populate("room_owner", "first_name email");
 
-    res.status(200).json(rooms);
+    logger.info({
+      message: `ROOMS FETCHED -- ${room}`,
+    });
+
+    console.log("ROOMS:", room);
+
+    console.log("------------------------------------------------------------");
+
+    res.status(200).json(room);
   } catch (error) {
     logger.error({
       message: `ROOM FETCH -- ${error.message}`,
@@ -94,7 +113,11 @@ exports.getRooms = async (req, res, next) => {
 
 exports.deleteRoom = async (req, res, next) => {
   try {
+    console.log(
+      "------------------------ ROOM FETCHING -----------------------",
+    );
     const { roomId } = req.params;
+    const user = await User.findById(req.userID);
 
     const room = await Room.findById(roomId);
 
@@ -103,17 +126,19 @@ exports.deleteRoom = async (req, res, next) => {
     }
 
     // Verify that the user owns this room
-    if (room.room_owner.toString() !== req.userID) {
+    if (String(room.room_owner) !== String(user.user_organization)) {
       logger.error({
         message: `ROOM DELETE -- Unauthorized deletion attempt by user ${req.userID}`,
         method: req.method,
         ip: req.ip,
       });
-      return res.status(403).json({ message: "Unauthorized to delete this room" });
+      return res
+        .status(403)
+        .json({ message: "Unauthorized to delete this room" });
     }
 
     await Room.findByIdAndDelete(roomId);
-    
+
     logger.info({
       message: `ROOM DELETE -- Room deleted: ${room.room_name}`,
       method: req.method,
@@ -122,6 +147,7 @@ exports.deleteRoom = async (req, res, next) => {
 
     const io = getIO();
     io.emit("roomDeleted", { roomId });
+    console.log("------------------------------------------------------------");
 
     res.status(200).json({ message: "Room deleted successfully" });
   } catch (error) {
@@ -143,11 +169,11 @@ exports.getRoomSpecifications = async (req, res) => {
 
     const rooms = await Room.find({
       room_organization: room.room_organization,
-      room_specification: { $ne: null }
+      room_specification: { $ne: null },
     }).select("room_specification");
 
     // get unique specs only
-    const specs = [...new Set(rooms.map(r => r.room_specification))];
+    const specs = [...new Set(rooms.map((r) => r.room_specification))];
 
     res.status(200).json(specs);
   } catch (error) {
@@ -163,7 +189,7 @@ exports.updateRoomSpecification = async (req, res) => {
     const room = await Room.findByIdAndUpdate(
       roomId,
       { room_specification },
-      { new: true }
+      { new: true },
     );
 
     if (!room) return res.status(404).json({ message: "Room not found" });
@@ -174,7 +200,9 @@ exports.updateRoomSpecification = async (req, res) => {
       ip: req.ip,
     });
 
-    res.status(200).json({ message: "Room specification updated successfully", room });
+    res
+      .status(200)
+      .json({ message: "Room specification updated successfully", room });
   } catch (error) {
     logger.error({
       message: `ROOM UPDATE SPEC -- ${error.message}`,

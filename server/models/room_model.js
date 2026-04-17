@@ -14,10 +14,6 @@ const roomSchema = mongoose.Schema({
         type: Number,
         default: 0
     },
-    room_organization: {
-        type: String,
-        required: true
-    },
     room_specification: {
         type: String,
         default: null

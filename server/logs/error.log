@@ -219,3 +219,16 @@
 {"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-04-15 23:46:17"}
 {"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-04-16 10:22:56"}
 >>>>>>> 20986dcc8e2d0ff6420fac9b350da7fcd3a81dcd
+{"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-04-17 23:03:54"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-04-17 23:04:06"}
+{"ip":"::ffff:127.0.0.1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:06:48"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:07:18"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:08:12"}
+{"ip":"::ffff:127.0.0.1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:08:17"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:08:26"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- room is not defined","method":"GET","timestamp":"2026-04-17 23:09:01"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- rooms is not defined","method":"GET","timestamp":"2026-04-17 23:23:39"}
+{"ip":"::1","level":"error","message":"ROOM FETCH -- rooms is not defined","method":"GET","timestamp":"2026-04-17 23:24:11"}
+{"ip":"::1","level":"error","message":"ROOM DELETE -- Unauthorized deletion attempt by user 69de6269a7f63ab585e92952","method":"DELETE","timestamp":"2026-04-17 23:24:57"}
+{"ip":"::1","level":"error","message":"DEVICE ADD -- User is not defined","method":"POST","timestamp":"2026-04-17 23:56:27"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-04-18 00:07:10"}
