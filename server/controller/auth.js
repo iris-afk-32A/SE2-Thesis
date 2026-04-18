@@ -220,4 +220,3 @@ exports.validateEmail = async (req, res) => {
     });
   }
 };
-

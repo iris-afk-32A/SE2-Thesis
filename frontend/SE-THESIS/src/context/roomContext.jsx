@@ -48,6 +48,7 @@ export const RoomProvider = ({ children }) => {
     };
 
     const handleRoomUpdated = (data) => {
+      console.log("AAAAAAAAAA");
       console.log("ROOM UPDATED:", data);
 
       setRooms((prev) => {

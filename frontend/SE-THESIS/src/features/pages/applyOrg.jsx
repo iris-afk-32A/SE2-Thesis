@@ -11,6 +11,7 @@ export default function ApplyOrg() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedOrg, setSelectedOrg] = useState(null);
   const [selectedOrgName, setSelectedOrgName] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const fetchOrganizations = async () => {
@@ -23,6 +24,10 @@ export default function ApplyOrg() {
     };
     fetchOrganizations();
   }, []);
+
+  const filteredOrganizations = organizations.filter((org) =>
+    org.organization_name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const handleApply = async () => {
     if (user?.is_authorized) {
@@ -49,7 +54,7 @@ export default function ApplyOrg() {
       await addOrganization({ org_name: orgName });
       setOrgName("");
       handleClose();
-      
+
       const orgs = await getOrganization();
       setOrganizations(orgs);
       toast.success("Organization added successfully!");
@@ -66,16 +71,18 @@ export default function ApplyOrg() {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
 
-  return (    
+  return (
     <div className="w-full h-full flex flex-col gap-6 p-8">
       <div className="flex flex-col gap-4 flex-1">
         <input
           type="text"
           placeholder="Search organizations..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full h-9 px-4 py-1 text-base border border-[#d4d3d1] rounded-full shadow-inside-dropshadow-small focus:outline-none focus:border-[#858585] bg-[#E4E3E1]"
         />
         <div className="flex-1 bg-[#E4E3E1] border border-[#d4d3d1] rounded-xl shadow-inside-dropshadow-small overflow-y-auto">
-          {organizations.map((org) => (
+          {filteredOrganizations.map((org) => (
             <div
               key={org._id}
               onClick={() => {
@@ -83,15 +90,15 @@ export default function ApplyOrg() {
                 setSelectedOrgName(org.organization_name);
               }}
               className={`py-2 px-3 text-lg cursor-pointer rounded transition-colors duration-150
-                ${selectedOrg === org._id ? "bg-[#7E808C] text-white" : "hover:bg-[#A7A7A3]"}
-              `}
+      ${selectedOrg === org._id ? "bg-[#7E808C] text-white" : "hover:bg-[#A7A7A3]"}
+    `}
             >
               {org.organization_name}
             </div>
           ))}
         </div>
         <div className="flex flex-row gap-4 justify-end">
-          <button 
+          <button
             className="w-62 h-10 bg-[#A1A2A6] text-white px-6 rounded-lg text-base hover:bg-[#7E808C] transition-colors duration-300"
             onClick={handleClick}
           >
@@ -132,12 +139,12 @@ export default function ApplyOrg() {
           <h2 className="text-lg text-[#4F4F4F]">Add Organization</h2>
           <form onSubmit={handleSubmit} className="flex flex-col gap-3">
             <input
-            type="text"
-            value={orgName}
-            onChange={(e) => setOrgName(e.target.value)}
-            placeholder="Enter Organization Name"
-            className="w-full min-w-0 bg-[#E4E3E1] rounded-full px-4 py-2 text-base focus:outline-none"
-          />
+              type="text"
+              value={orgName}
+              onChange={(e) => setOrgName(e.target.value)}
+              placeholder="Enter Organization Name"
+              className="w-full min-w-0 bg-[#E4E3E1] rounded-full px-4 py-2 text-base focus:outline-none"
+            />
             <button
               type="submit"
               className="bg-[#A1A2A6] text-white py-2 rounded-lg text-base hover:bg-[#7E808C] transition-colors duration-300"

@@ -53,6 +53,16 @@ const userSchema = new mongoose.Schema({
   reset_otp_expiry: {
     type: Date,
     default: null
+  },
+  profile_picture: {
+    data: {
+      type: Buffer,
+      default: null,
+    },
+    mimeType: {
+      type: String,
+      default: null,
+    },
   }
 });
 

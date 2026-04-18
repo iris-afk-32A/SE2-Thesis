@@ -18,21 +18,25 @@ exports.sendOTP = async (req, res) => {
       return res.status(200).json({ message: "If this email exists, an OTP has been sent." });
     }
 
+    console.log(`User found: ${user.email}`);
+
     // Generate 6-digit OTP
     const otp = crypto.randomInt(100000, 999999).toString();
     const expiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes from now
 
     // Console log for testing
     console.log(`OTP Generated for ${email}: ${otp}`);
-    console.log(`OTP expires at: ${expiry.toLocaleString()}\n`);
+    console.log(`OTP expires at: ${expiry.toLocaleString()}`);
 
     // Save OTP and expiry to user
     user.reset_otp = otp;
     user.reset_otp_expiry = expiry;
     await user.save();
+    console.log(`OTP saved to database for ${email}`);
 
     // Send email using Resend
     try {
+      console.log(`Attempting to send email via Resend to ${email}`);
       const emailResponse = await resend.emails.send({
         from: "Password Reset <onboarding@resend.dev>",
         to: email,
@@ -50,8 +54,8 @@ exports.sendOTP = async (req, res) => {
       console.log(`Email sent successfully to ${email}:`, emailResponse);
     } catch (emailError) {
       console.log(`Email sending failed (but OTP is generated - use it for testing):`);
-      console.log(`   Error: ${emailError.message}`);
-      console.log(`   Tip: Check if RESEND_API_KEY is set in .env\n`);
+      console.log(`Error: ${emailError.message}`);
+      console.log(`Tip: Check if RESEND_API_KEY is set in .env\n`);
     }
 
     logger.info({
@@ -60,9 +64,11 @@ exports.sendOTP = async (req, res) => {
       ip: req.ip,
     });
 
+    console.log(`Sending response to frontend - OTP generation complete\n`);
     res.status(200).json({ message: "If this email exists, an OTP has been sent." });
   } catch (error) {
     console.error(`OTP Generation Error: ${error.message}`);
+    console.error(`Stack trace:`, error.stack);
     logger.error({
       message: `FORGOT PASSWORD SEND OTP -- ${error.message}`,
       method: req.method,

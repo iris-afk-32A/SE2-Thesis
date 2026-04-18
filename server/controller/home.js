@@ -96,6 +96,8 @@ const detectRoomFrame = async (req, res) => {
       roomId: room_id,
       people_count: peopleCount,
     });
+    console.log("Emitting roomUpdated event for room", room_id, "with occupancy:", peopleCount);
+
 
     // Return actual inference result
     return res.status(200).json({

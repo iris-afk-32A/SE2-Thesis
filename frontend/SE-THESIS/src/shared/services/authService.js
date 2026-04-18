@@ -58,5 +58,3 @@ export const validateUserEmail = async (email) => {
     throw error;
   }
 };
-
-

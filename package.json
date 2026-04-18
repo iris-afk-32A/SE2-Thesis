@@ -9,6 +9,9 @@
     "concurrently": "^9.2.1"
   },
   "dependencies": {
-    "nodemailer": "^8.0.5"
+    "bcrypt": "^6.0.0",
+    "nodemailer": "^8.0.5",
+    "port": "^0.8.1",
+    "serial": "^0.0.9"
   }
 }
