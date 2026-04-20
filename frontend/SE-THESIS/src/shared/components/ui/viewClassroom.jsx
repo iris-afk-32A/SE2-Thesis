@@ -502,6 +502,7 @@ export default function ViewClassroom({
   onClose,
   roomId,
   roomName,
+  relayPin,
   onRoomDeleted,
 }) {
   const [connectedDevice, setConnectedDevice] = useState(null);
@@ -776,7 +777,19 @@ export default function ViewClassroom({
     setLightsOn(newState);
     setDeviceState(roomId, newState, fansOn);
     const action = newState ? "turned_on" : "turned_off";
-    await turnOnDevice({ command: newState ? "ALL_ON" : "ALL_OFF" });
+    if (relayPin == null) {
+      toast.error("No relay pin assigned for this room");
+      return;
+    }
+    console.log("Device command sent for fans:", {
+      command: newState ? `PIN_${relayPin}_ON` : `PIN_${relayPin}_OFF`,
+    });
+
+    await turnOnDevice({
+      command: newState ? `PIN_${relayPin}_ON` : `PIN_${relayPin}_OFF`,
+    });
+
+
     addActivity(roomName, action, "lights");
 
     const res = await recordActivity({
@@ -792,6 +805,17 @@ export default function ViewClassroom({
     setFansOn(newState);
     setDeviceState(roomId, lightsOn, newState);
     const action = newState ? "turned_on" : "turned_off";
+    if (relayPin == null) {
+      toast.error("No relay pin assigned for this room");
+      return;
+    }
+
+    await turnOnDevice({
+      command: newState ? `PIN_${relayPin}_ON` : `PIN_${relayPin}_OFF`,
+    });
+    console.log("Device command sent for fans:", {
+      command: newState ? `PIN_${relayPin}_ON` : `PIN_${relayPin}_OFF`,
+    });
     addActivity(roomName, action, "fans");
 
     const res = await recordActivity({

@@ -18,6 +18,10 @@ const roomSchema = mongoose.Schema({
         type: String,
         default: null
     },
+    relay_pin: {
+        type: Number,
+        default: null
+    }
 });
 
 const Room = mongoose.model('Room', roomSchema);

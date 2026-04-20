@@ -42,6 +42,8 @@ export const RoomProvider = ({ children }) => {
         return [...prev, room];
       });
     };
+    
+    
 
     const handleRoomDeleted = (data) => {
       setRooms((prev) => prev.filter((room) => room._id !== data.roomId));
@@ -63,10 +65,10 @@ export const RoomProvider = ({ children }) => {
 
           if (data.people_count >= 1) {
             console.log("TURNING ON DEVICES FOR ROOM:", data.roomId);
-            turnOnDevice({ command: "ALL_ON" });
+            turnOnDevice({ command: `PIN_${room.relay_pin}_ON` });
           } else {
             console.log("TURNING OFF DEVICES FOR ROOM:", data.roomId);
-            turnOnDevice({ command: "ALL_OFF" });
+            turnOnDevice({ command: `PIN_${room.relay_pin}_OFF` });
           }
 
           return {

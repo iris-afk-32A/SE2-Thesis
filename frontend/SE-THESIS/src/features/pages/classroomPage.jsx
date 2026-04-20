@@ -1,5 +1,12 @@
 import { useState, useEffect, useRef } from "react";
-import { CirclePlus, ListVideo, Ellipsis, X, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  CirclePlus,
+  ListVideo,
+  Ellipsis,
+  X,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import Popover from "@mui/material/Popover";
 import { useForm } from "react-hook-form";
 import { handleServerDown } from "../../shared/utils/serverDownHandler.js";
@@ -21,6 +28,8 @@ function SpecRow({ label, rooms, onCardClick, onKebabClick }) {
   const scrollRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
+
+  console.log("ROOMS IN SPEC ROW:", rooms);
 
   const checkScroll = () => {
     const el = scrollRef.current;
@@ -70,7 +79,7 @@ function SpecRow({ label, rooms, onCardClick, onKebabClick }) {
           {rooms.map((room) => (
             <div
               key={room._id}
-              onClick={() => onCardClick(room._id, room.room_name)}
+              onClick={() => onCardClick(room)}
               className="relative overflow-clip bg-[#DFDEDA] shadow-outside-dropshadow rounded-lg hover:scale-101 duration-100 transition-all flex flex-col cursor-pointer flex-shrink-0"
               style={{ width: "320px", aspectRatio: "3/2" }}
             >
@@ -112,12 +121,17 @@ export default function ClassroomPage() {
   const [kebabAnchorEl, setKebabAnchorEl] = useState(null);
   const [selectedRoomId, setSelectedRoomId] = useState(null);
   const [selectedRoomName, setSelectedRoomName] = useState(null);
+  const [selectedRelayPin, setSelectedRelayPin] = useState(null);
   const [editModalOpen, setEditModalOpen] = useState(false);
   const [editScheduleModalOpen, setEditScheduleModalOpen] = useState(false);
   const [viewModalOpen, setViewModalOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm();
   const { isServerUp, setIsServerUp } = useServerStatus();
 
   // Group rooms by room_specification
@@ -139,14 +153,16 @@ export default function ClassroomPage() {
     if (errors.cr_name) toast.error(errors.cr_name.message);
   };
 
-  const handleCardClick = (roomId, roomName) => {
-    setSelectedRoomId(roomId);
-    setSelectedRoomName(roomName);
+  const handleCardClick = (room) => {
+    setSelectedRoomId(room._id);
+    setSelectedRoomName(room.room_name);
+    setSelectedRelayPin(room.relay_pin ?? null);
     setViewModalOpen(true);
   };
-
   const handleRoomDeleted = (deletedRoomId) => {
-    setRooms((prevRooms) => prevRooms.filter((room) => room._id !== deletedRoomId));
+    setRooms((prevRooms) =>
+      prevRooms.filter((room) => room._id !== deletedRoomId),
+    );
   };
 
   const handleKebabClick = (event, roomId, roomName) => {
@@ -165,11 +181,14 @@ export default function ClassroomPage() {
       // If user is not admin, create a request instead
       if (!user?.is_admin) {
         await createClassroomRequest(data.cr_name);
-        toast.info("Your classroom request has been sent to administrators for approval", { });
+        toast.info(
+          "Your classroom request has been sent to administrators for approval",
+          {},
+        );
         setAnchorEl(null);
         return;
       }
-      
+
       // Admin can add directly
       const res = await addRoom({ room_name: data.cr_name });
       addActivity(data.cr_name, "created");
@@ -177,7 +196,9 @@ export default function ClassroomPage() {
       setAnchorEl(null);
     } catch (error) {
       if (handleServerDown(error, setIsServerUp, navigate)) return;
-      toast.error(error.response?.data?.message || "Failed to create classroom");
+      toast.error(
+        error.response?.data?.message || "Failed to create classroom",
+      );
     }
   };
 
@@ -204,7 +225,9 @@ export default function ClassroomPage() {
       <section className="relative flex-1 overflow-y-auto flex-wrap w-[80%] min-h-0 flex flex-col gap-8 p-4">
         {specKeys.length === 0 ? (
           <div className="w-full h-full flex items-center justify-center">
-            <p className="text-subtitle text-[#A1A2A6] font-light">No classrooms yet</p>
+            <p className="text-subtitle text-[#A1A2A6] font-light">
+              No classrooms yet
+            </p>
           </div>
         ) : (
           specKeys.map((spec) => (
@@ -227,7 +250,11 @@ export default function ClassroomPage() {
         onClose={() => setAnchorEl(null)}
         slotProps={{
           paper: {
-            sx: { backgroundColor: "#DFDEDA", color: "#A1A2A6", borderRadius: "15px" },
+            sx: {
+              backgroundColor: "#DFDEDA",
+              color: "#A1A2A6",
+              borderRadius: "15px",
+            },
           },
         }}
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
@@ -236,9 +263,14 @@ export default function ClassroomPage() {
         <div className="bg-[#DFDEDA] shadow-inner shadow-black/10 flex flex-col gap-2 items-center justify-center">
           <div className="w-[25vw] bg-[#C4C3C0] shadow shadow-black/20 flex-1 flex flex-row items-center justify-between p-5">
             <h2 className="text-subtitle text-[#4F4F4F]">
-              {user?.user_organization ? "Add Classroom" : "Organization Required"}
+              {user?.user_organization
+                ? "Add Classroom"
+                : "Organization Required"}
             </h2>
-            <button onClick={() => setAnchorEl(null)} className="cursor-pointer hover:scale-105 transition-all duration-150">
+            <button
+              onClick={() => setAnchorEl(null)}
+              className="cursor-pointer hover:scale-105 transition-all duration-150"
+            >
               <X />
             </button>
           </div>
@@ -267,7 +299,10 @@ export default function ClassroomPage() {
                   Apply to an organization first
                 </p>
                 <button
-                  onClick={() => { setAnchorEl(null); navigate("/iris/profile"); }}
+                  onClick={() => {
+                    setAnchorEl(null);
+                    navigate("/iris/profile");
+                  }}
                   className="w-full bg-[#A1A2A6] text-subtitle text-[#E4E3E1] shadow-outside-dropshadow py-4 rounded-3xl hover:scale-105 transition-all duration-150"
                 >
                   Go to Apply Organization
@@ -288,7 +323,10 @@ export default function ClassroomPage() {
 
       <EditClassroom
         open={editModalOpen}
-        onClose={() => { setEditModalOpen(false); setSelectedRoomId(null); }}
+        onClose={() => {
+          setEditModalOpen(false);
+          setSelectedRoomId(null);
+        }}
         roomId={selectedRoomId}
       />
 
@@ -303,6 +341,7 @@ export default function ClassroomPage() {
         onClose={() => setViewModalOpen(false)}
         roomId={selectedRoomId}
         roomName={selectedRoomName}
+        relayPin={selectedRelayPin}
         onRoomDeleted={handleRoomDeleted}
       />
     </div>

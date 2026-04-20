@@ -9,6 +9,7 @@ const logger = require("../utils/logger");
 exports.addRoom = async (req, res, next) => {
   console.log("------------------------ ROOM ADDING -----------------------");
   try {
+    const availablePins = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
     const io = getIO();
     const { room_name } = req.body;
     const user = await User.findById(req.userID);
@@ -28,6 +29,13 @@ exports.addRoom = async (req, res, next) => {
         .json({ message: "User is not part of any organization" });
     }
 
+    const usedPins = await Room.find({ relay_pin: { $ne: null } }).distinct("relay_pin");
+    const assignedPin = availablePins.find((pin) => !usedPins.includes(pin));
+
+    if (!assignedPin) {
+      return res.status(400).json({ message: "No available relay pins" });
+    }
+
     const existingRoom = await Room.findOne({ room_name, room_owner: org._id });
     if (existingRoom) {
       logger.error({
@@ -43,6 +51,7 @@ exports.addRoom = async (req, res, next) => {
     const room = new Room({
       room_name,
       room_owner: org.user_organization,
+      relay_pin: assignedPin
     });
 
     await room.save();

@@ -5356,3 +5356,183 @@
 {"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e265ea5db5bb8ca7bd7868'),\n  room_name: 'Mys',\n  room_owner: null,\n  room_occupants: 1.7999999999999998,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e266135db5bb8ca7bd78c5'),\n  room_name: 'Carats',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-18 23:57:16"}
 {"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-18 23:57:16"}
 {"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-18 23:57:16"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-19 00:04:26"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-19 00:04:27"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-19 00:04:27"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e265ea5db5bb8ca7bd7868'),\n  room_name: 'Mys',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e266135db5bb8ca7bd78c5'),\n  room_name: 'Carats',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-19 00:04:27"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-19 00:04:28"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-19 00:04:28"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-19 00:04:32"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-19 00:04:32"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e265ea5db5bb8ca7bd7868'),\n  room_name: 'Mys',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e266135db5bb8ca7bd78c5'),\n  room_name: 'Carats',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-19 00:04:32"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-19 00:04:37"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-19 00:04:37"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 2,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e265ea5db5bb8ca7bd7868'),\n  room_name: 'Mys',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  _id: new ObjectId('69e266135db5bb8ca7bd78c5'),\n  room_name: 'Carats',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-19 00:04:37"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-19 00:04:37"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-19 00:04:37"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-20 21:48:43"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-20 21:48:44"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-20 21:48:47"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-20 21:48:50"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-20 21:48:53"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-20 21:49:16"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:49:17"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  relay_pin: null,\n  _id: new ObjectId('69e25fb157fd6d8551fcd6c6'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 1.2999999999999998,\n  room_specification: null,\n  __v: 0\n},{\n  relay_pin: null,\n  _id: new ObjectId('69e25fd357fd6d8551fcd6fd'),\n  room_name: 'Karina',\n  room_owner: null,\n  room_occupants: 0.7,\n  room_specification: null,\n  __v: 0\n},{\n  relay_pin: null,\n  _id: new ObjectId('69e25fdf57fd6d8551fcd718'),\n  room_name: 'NingNing',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  relay_pin: null,\n  _id: new ObjectId('69e25fea57fd6d8551fcd739'),\n  room_name: 'Giselle',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  relay_pin: null,\n  _id: new ObjectId('69e265ea5db5bb8ca7bd7868'),\n  room_name: 'Mys',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  __v: 0\n},{\n  relay_pin: null,\n  _id: new ObjectId('69e266135db5bb8ca7bd78c5'),\n  room_name: 'Carats',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  __v: 0\n}","timestamp":"2026-04-20 21:49:17"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:49:17"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:49:17"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:49:53"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:49:53"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-20 21:49:53"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:49:53"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:49:53"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Sample 1: With status code 201","method":"POST","timestamp":"2026-04-20 21:49:58"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:57:44"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:57:44"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:57:44"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:57:44"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:57:44"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:57:49"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:57:49"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:57:50"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:57:50"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:57:50"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:57:54"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:57:54"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:57:54"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:57:54"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:57:55"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:57:57"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:57:57"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:57:57"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:57:57"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:57:57"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:58:00"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:58:00"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:58:01"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:58:01"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:58:01"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:58:13"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:58:13"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:58:13"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:58:13"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:58:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:58:43"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:58:43"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:58:43"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:58:43"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:58:43"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:58:55"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:58:55"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:58:55"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:58:58"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:58:58"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:58:58"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:07"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:07"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:07"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:09"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:09"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:10"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:22"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:22"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:22"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:24"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:24"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:24"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:30"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:30"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:30"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:59:30"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:59:30"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:36"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:36"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:36"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:59:36"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:59:37"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:54"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:54"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:54"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:59:54"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:59:54"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 21:59:56"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 21:59:56"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 21:59:56"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 21:59:56"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 21:59:56"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:00:07"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 22:00:07"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:00:07"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 22:00:07"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 22:00:07"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:00:14"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 22:00:14"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:00:14"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 22:00:14"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 22:00:14"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:36:57"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 22:36:57"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:36:57"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 22:36:57"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 22:36:57"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:37:07"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 22:37:07"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:37:07"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 22:37:07"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 22:37:07"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:37:21"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 22:37:21"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:37:21"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 22:37:21"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 22:37:21"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:37:30"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 22:37:30"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:37:30"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 22:37:30"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 22:37:30"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-20 22:51:56"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69e62f060a3b73877cb5d3c9: With status code 201","method":"POST","timestamp":"2026-04-20 22:52:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-20 22:57:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-20 22:57:14"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:57:15"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 22:57:15"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:57:15"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-20 22:57:18"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-20 22:59:51"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 22:59:51"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 22:59:52"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 22:59:52"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 22:59:52"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-20 23:00:24"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-20 23:02:54"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 23:02:57"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 23:02:57"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 23:02:57"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 23:02:58"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 23:02:58"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-20 23:10:20"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 23:10:21"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 23:10:21"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 23:10:21"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 23:10:22"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0.39999999999999997,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 23:10:22"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-20 23:11:46"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 23:11:49"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 23:11:50"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 23:11:50"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n}","timestamp":"2026-04-20 23:11:50"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 23:11:51"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ROOM CREATE -- Room added Winter: With status code 201","method":"POST","timestamp":"2026-04-20 23:13:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 23:13:23"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 23:13:24"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n},{\n  _id: new ObjectId('69e642887a7a64ab8cd0f0d0'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 3,\n  __v: 0\n}","timestamp":"2026-04-20 23:13:24"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 23:13:24"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 23:13:24"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added Iriun Webcam: With status code 201","method":"POST","timestamp":"2026-04-20 23:14:37"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69e642887a7a64ab8cd0f0d0: With status code 201","method":"POST","timestamp":"2026-04-20 23:14:44"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added asdad: With status code 201","method":"POST","timestamp":"2026-04-20 23:14:50"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan Dale data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-20 23:14:57"}
+{"ip":"::1","level":"info","message":"SUBJECTS FETCHED -- 0 subjects fetched","method":"GET","timestamp":"2026-04-20 23:14:57"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69e62f060a3b73877cb5d3c9'),\n  room_name: 'Sample 1',\n  room_owner: null,\n  room_occupants: 1,\n  room_specification: null,\n  relay_pin: 2,\n  __v: 0\n},{\n  _id: new ObjectId('69e642887a7a64ab8cd0f0d0'),\n  room_name: 'Winter',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 3,\n  __v: 0\n},{\n  _id: new ObjectId('69e642ea7a7a64ab8cd0f19e'),\n  room_name: 'asdad',\n  room_owner: null,\n  room_occupants: 0,\n  room_specification: null,\n  relay_pin: 4,\n  __v: 0\n}","timestamp":"2026-04-20 23:14:57"}
+{"ip":"::1","level":"info","message":"ORGANIZATION MEMBERS -- Fetched 2 members for organization: Maevis","method":"GET","timestamp":"2026-04-20 23:14:57"}
+{"ip":"::1","level":"info","message":"NOTIFICATIONS -- Fetched 1 notifications for organization: 69e24f31668ba7c8cb86f549","method":"GET","timestamp":"2026-04-20 23:14:57"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-20 23:21:48"}

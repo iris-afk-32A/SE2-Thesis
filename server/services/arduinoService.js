@@ -6,7 +6,7 @@ const initArduinoPort = () => {
   if (port && port.isOpen) return port;
 
   port = new SerialPort({
-    path: "COM5",
+    path: "COM4",
     baudRate: 9600,
     autoOpen: false,
   });
